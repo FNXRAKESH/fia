@@ -1,0 +1,50 @@
+#BusinessConsulting .bg{
+    background-color: #DFEFE4;
+    color:#000;
+}
+.bg h6{
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 110%;
+    letter-spacing: -0.03em;
+    color: #2B9348;
+}
+.bg h1{
+font-weight: 700 !important;
+    font-size: 60px !important;
+    line-height: 110% !important;
+    letter-spacing: -0.03em !important;
+    color: #1A191E !important;
+}
+ 
+#SolutionImplementation .bg {
+    background-color: rgb(64, 84, 170);
+    color: #000;
+}
+
+#MaintenanceSupport .bg {
+    background-color: rgb(109, 44, 129);
+    color: #000;
+}
+
+@media screen and (max-width:1024px) {
+    .bg h1{
+        font-size: 25px !important;
+    }
+    .bg h6{
+        font-size: 15px !important;
+    }
+}
+
+@media screen and (max-width:576px) {
+.bg h1 {
+        font-size: 18px !important;
+    }
+
+    .bg h6 {
+        font-size: 12px !important;
+    }
+    #BusinessConsulting h2, #BusinessConsulting p{
+        text-align: center !important;
+    }
+}

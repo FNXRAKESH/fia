@@ -1,0 +1,172 @@
+:root {
+    --yellow: #EBEE43;
+    --green: #4CF0A1;
+}
+/* #howItWorks{
+    background-color: #fff;
+    color:#000;
+    
+} */
+
+#howItWorks h1{
+    text-align: center;
+}
+
+#howItWorks .title{
+    position: relative;
+    z-index: 1;
+}
+
+#howItWorks .title::before{
+    content:'';
+    position: absolute;
+    width: 35px;
+    height: 32px;
+    background-color: var(--yellow);
+    transform: skewX(15deg);
+    z-index: -1;
+    left:-10px;
+    top:5px;
+}
+#howItWorks .title2::before {
+background-color: var(--green);
+}
+.curve{
+    position: relative;
+    z-index: 0; 
+    
+}
+
+/* .curve::before{
+    content: '';
+    background:url('../../assets/curve.png');
+    position: absolute;
+    bottom: 50px;
+    right: -95px;
+    background-size: contain;
+    width: 90%;
+    height: 100%;
+    background-repeat: no-repeat;
+    z-index: -1;
+
+}
+.curve::after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    transform: rotate(30deg);
+    width: 90px;
+    height: 90px;
+     background-color: #EBEE43;
+    z-index: -1;
+
+} */
+.ph{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+        border-radius: 10px;
+        width: 50px;
+        height: 50px;
+}
+ 
+.step{
+   
+        border-radius: 10px;
+        padding: 30px;
+        margin: 10px 0;
+        display: flex;
+        align-items: center;
+        
+}
+.step h5{
+    font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+    padding-left: 20px;
+}
+
+.stepOne{
+ background: #F2F2DE;
+}
+.stepTwo {
+    background: #E5F2DE;
+}
+
+/* @media only screen and (max-width:576px){
+    .curve::before {
+        right: -10px;
+        bottom: 37px;
+        width: 90%;
+    }
+        .curve::after {
+            width: 60px;
+            height: 60px;
+            top: 0px;
+                left: 0px;
+        }
+               
+} */
+@media only screen and (max-width:1024px) {
+#questions p{
+    padding:0 !important
+}
+}
+@media only screen and (min-width:577px) and (max-width:1024px) {
+    /* .curve::before {
+        right: -25px;
+        bottom: 37px;
+        width: 90%;
+    }
+
+        .curve::after {
+            width: 60px;
+            height: 60px;
+            top: 0px;
+            left: 0px;
+        } */
+
+        .step{
+            padding: 10px;
+            
+        }
+        .step h5{
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: 1px;
+        }
+}
+ 
+#questions{
+    background-color: #02120A;
+    color:#fff;
+    border-radius: 7px;
+    flex-wrap: wrap;
+    /* background: url('/assets/dots2.png'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+ #questions .btnGroup{
+    width: 100%;
+ }
+ #questions .btnFill, #questions .btnOutline{
+    margin-right: 0 !important;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: left;
+ }
+ #questions .btnOutline button{
+    width: 100% !important;
+    text-align: left;
+    display: flex;
+    align-items: center;
+ }
+ #questions button{
+    display: flex;
+ }
+  #questions button span {
+     flex-grow: 1;
+ }
