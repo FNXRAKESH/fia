@@ -1,4 +1,4 @@
-#BusinessConsulting .bg{
+#BusinessConsulting .bg, #solutionImplementation .bg{
     background-color: #DFEFE4;
     color:#000;
 }
@@ -28,6 +28,10 @@ font-weight: 700 !important;
 }
 
 @media screen and (max-width:1024px) {
+    #BusinessConsulting .title{
+        font-size: 34px !important;
+        line-height: 45px !important;
+    }
     .bg h1{
         font-size: 25px !important;
     }

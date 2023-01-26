@@ -1,6 +1,8 @@
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect } from 'react';
+import Faq from '../../components/faq/Faq';
+import RequestCall from '../../components/requestCall/RequestCall';
 import './index.css'
 import bg from '/assets/service/bg.png'
 import s1 from '/assets/service/s1.png';
@@ -30,7 +32,7 @@ const BusinessConsulting = () => {
         <div className="container py-5 mt-5">
           <div className="row">
             <div className="col-md-6">
-              <h1 className="pb-3">
+              <h1 className="pb-3 title">
                 Our Team of Industry Experts Offers Professional Guidance and
                 Practical Solutions to Help Your Business Achieve Its Goals.
               </h1>
@@ -65,9 +67,8 @@ const BusinessConsulting = () => {
             <div className="col-md-2 d-none d-md-block"></div>
             <div className="col-md-5 d-flex justify-content-center flex-column">
               <h2>
-                We <span style={{ color: '#2B9348' }}>Understand</span> your
-                Unique Business
-              </h2>
+                We <span style={{ color: '#2B9348' }}>Understand</span> that
+                your Business is Unique</h2>
               <div className="col-md-5 d-flex d-md-none justify-content-center">
                 <img src={s1} alt="bc" className="img-fluid" />
               </div>
@@ -165,6 +166,8 @@ const BusinessConsulting = () => {
             </div>
           </div>
         </div>
+        <RequestCall />
+        <Faq />
       </div>
     );
 }

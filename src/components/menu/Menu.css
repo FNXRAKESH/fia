@@ -52,13 +52,19 @@ nav .outline{
 } */
 
 /* nav button{color:#000 !important} */
+.selected {
+    color: rgb(133, 14, 14) !important
+}
 
 @media screen and (max-width:1024px) {
     nav li{
         padding:10px
     }
+    .nav-link, .nav-item{
+        padding: 5px !important;
+    }
 }
 
-.selected{
-    color:rgb(133, 14, 14) !important
-}
+
+
+ 

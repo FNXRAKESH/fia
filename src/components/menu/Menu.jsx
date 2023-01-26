@@ -80,7 +80,12 @@ const Menu = () => {
                 </a>
                 <ul className="dropdown-menu">
                   <li className="dropdown-item">
-                    <Link to="BusinessConsulting">Business Consulting</Link>
+                    <Link
+                      to="BusinessConsulting"
+                      
+                    >
+                      Business Consulting
+                    </Link>
                   </li>
                   <li className="dropdown-item">
                     <Link to="SolutionImplementation">
@@ -116,11 +121,6 @@ const Menu = () => {
                       Team
                     </a>
                   </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Contact Us
-                    </a>
-                  </li>
                 </ul>
               </li>
               {/* <li className="nav-item">
@@ -134,12 +134,12 @@ const Menu = () => {
                 </a>
               </li> */}
             </ul>
-            {/* <button type="button" className=" me-4 btn text-success">
+            <button type="button" className=" me-4 btn text-success">
               Book a Demo
-            </button> */}
+            </button>
             <div className="btnGroup">
               <button type="button" className="btn btn-success btnFill">
-                Book a Demo
+                Contact Us
               </button>
             </div>
           </div>
