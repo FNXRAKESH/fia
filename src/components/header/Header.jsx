@@ -21,11 +21,9 @@ const Header = () => {
                 Dynamic Small Business Lending Solutions
               </h1>
               <p>
-                <small>
-                  Get Unmatched Support for Your Business with Our MCA Solution.
-                  Navigate Change and Advance Together with Our Continuous
-                  Improvement and Partnership.
-                </small>
+                Get Unmatched Support for Your Business with Our MCA Solution.
+                Navigate Change and Advance Together with Our Continuous
+                Improvement and Partnership.
               </p>
               <div className="d-none d-lg-block">
                 <div className="points row flex-wrap justify-content-between mt-5 mb-3">
@@ -63,7 +61,11 @@ const Header = () => {
                   >
                     Book a Demo
                   </button>
-                  <button type="button" className="btn text-success">
+                  <button
+                    type="button"
+                    className="btn text-success"
+                    onClick={() => navigate('invFactoring')}
+                  >
                     Learn More
                     <span className="ms-2">
                       <FontAwesomeIcon icon={faArrowRight} color="#2B9348" />
@@ -112,7 +114,11 @@ const Header = () => {
               <button type="button" className="btn btn-success btnFill me-4">
                 Book a Demo
               </button>
-              <button type="button" className="btn text-success">
+              <button
+                type="button"
+                className="btn text-success"
+                onClick={() => navigate('invFactoring')}
+              >
                 Learn More
                 <span className="ms-2">
                   <FontAwesomeIcon icon={faArrowRight} color="#2B9348" />

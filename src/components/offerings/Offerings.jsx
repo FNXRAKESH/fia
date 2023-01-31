@@ -1,6 +1,11 @@
 import React from 'react';
 import './Offerings.css'
-import solutions from '/assets/landing/reward.png'
+import mca from '/assets/landing/mca.png';
+import analysis from '/assets/landing/analysis.png';
+import integration from '/assets/landing/integration.png';
+import reports from '/assets/landing/reports.png';
+import service from '/assets/landing/service.png';
+import support from '/assets/landing/support.png';
 const Offerings = () => {
     return (
       <div id="offerings">
@@ -16,7 +21,10 @@ const Offerings = () => {
           <div className="row">
             <div className="col-md-4 d-flex align-items-strech">
               <div className="keys key1 px-3 py-5">
-                <img src={solutions} alt="solutions" />
+                <div className='imgContainer'>
+
+                <img src={mca} alt="solutions" />
+                </div>
                 <h4>MCA Origination</h4>
                 <p className="py-3">
                   We help you attract potential borrowers by{' '}
@@ -30,7 +38,10 @@ const Offerings = () => {
             </div>
             <div className="col-md-4 d-flex align-items-strech">
               <div className="keys key2 px-3 py-5">
-                <img src={solutions} alt="solutions" />
+                <div className='imgContainer'>
+
+                <img src={analysis} alt="solutions" />
+                </div>
                 <h4>Credit Analysis</h4>
                 <p className="py-3">
                   We analyze a business's creditworthiness and risk level to{' '}
@@ -41,7 +52,10 @@ const Offerings = () => {
             </div>
             <div className="col-md-4 d-flex align-items-strech">
               <div className="keys key3 px-3 py-5">
-                <img src={solutions} alt="solutions" />
+                <div className='imgContainer'>
+
+                <img src={integration} alt="solutions" />
+                </div>
                 <h4>Integrations</h4>
                 <p className="py-3">
                   We assist you in{' '}
@@ -57,7 +71,10 @@ const Offerings = () => {
           <div className="row">
             <div className="col-md-4 d-flex align-items-strech">
               <div className="keys key4 px-3 py-5">
-                <img src={solutions} alt="solutions" />
+                <div className='imgContainer'>
+
+                <img src={service} alt="solutions" />
+                </div>
                 <h4>MCA Servicing</h4>
                 <p className="py-3">
                   We help you simplify the process of{' '}
@@ -71,7 +88,10 @@ const Offerings = () => {
             </div>
             <div className="col-md-4 d-flex align-items-strech">
               <div className="keys key5 px-3 py-5">
-                <img src={solutions} alt="solutions" />
+                <div className='imgContainer'>
+
+                <img src={reports} alt="solutions" />
+                </div>
                 <h4>Reports</h4>
                 <p className="py-3">
                   <b>Track your financial health on a regular basis</b> &amp;
@@ -83,7 +103,9 @@ const Offerings = () => {
             </div>
             <div className="col-md-4 d-flex align-items-strech">
               <div className="keys key6 px-3 py-5">
-                <img src={solutions} alt="solutions" />
+                <div className='imgContainer'>
+                <img src={support} alt="solutions" />
+                </div>
                 <h4>Post-deployment Support</h4>
                 <p className="py-3">
                   We provide ongoing support{' '}

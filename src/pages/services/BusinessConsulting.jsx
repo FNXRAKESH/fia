@@ -20,7 +20,7 @@ const BusinessConsulting = () => {
           <div className="container">
             <div className="row align-items-center">
               <div className="col-6">
-                <h6>Business Consulting</h6>
+                <h6>Expertise by Your Side</h6>
                 <h1>Expert Financial Consulting for Finance Companies</h1>
               </div>
               <div className="col-6">
@@ -68,7 +68,8 @@ const BusinessConsulting = () => {
             <div className="col-md-5 d-flex justify-content-center flex-column">
               <h2>
                 We <span style={{ color: '#2B9348' }}>Understand</span> that
-                your Business is Unique</h2>
+                your Business is Unique
+              </h2>
               <div className="col-md-5 d-flex d-md-none justify-content-center">
                 <img src={s1} alt="bc" className="img-fluid" />
               </div>

@@ -6,6 +6,7 @@ import Landing from './pages/Landing';
 import Services from "./pages/Services";
 import SolutionImplementation from "./pages/services/SolutionImplementation";
 import MaintenanceSupport from "./pages/services/MaintenanceSupport";
+import InvFactoring from "./pages/solutions/InvFactoring";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             path="SolutionImplementation"
             element={<SolutionImplementation />}
           />
+          <Route path="invFactoring" element={<InvFactoring />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
         <Footer />

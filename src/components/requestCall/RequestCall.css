@@ -24,7 +24,7 @@
     z-index: -1;
 }
 
-#requestCall .ctaGroup button {
+#requestCall .ctaGroup button, #requestCall .ctaGroup a {
     width: 100%;
 }
 

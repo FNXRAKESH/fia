@@ -14,7 +14,7 @@ html, body{
   color:#000;
   font-family: 'Inter', sans-serif;
   scroll-padding-top: 100px;
-   
+   font-size: 16px;
 }
 
 button{
@@ -25,16 +25,20 @@ button{
 h1, h2, h3, h4,h5,h6, button, a{
   font-family: 'DM Sans', sans-serif;
 }
+hr {
+  border-color: #E9E9E9;
+  opacity: 1;
+}
 li a{
   font-family: 'Inter', sans-serif;
   text-decoration: none;
   color: inherit;
 }
-p{font-size: 18px;}
+p{font-size: 16px;}
 h1{
-  font-size: 40px !important;
+  font-size: 35px !important;
   font-weight: 700;
-  line-height: 50px !important;
+  line-height: 42px !important;
 }
 .btn-success{
   background: #2B9348 !important;
@@ -125,9 +129,16 @@ h1{
     line-height: 135%;
 } */
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:768px) {
   
-    
+    h1,h2 {
+        font-size: 22px !important;
+        font-weight: 700;
+        line-height: 30px !important;
+      }
+      h6{
+        font-size: calc(1.275rem + .3vw) !important;
+      }
     
 }
 

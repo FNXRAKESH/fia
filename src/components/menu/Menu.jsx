@@ -56,15 +56,11 @@ const Menu = () => {
                   Solutions
                 </a>
                 <ul className="dropdown-menu">
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      MCA
-                    </a>
+                  <li className="dropdown-item">
+                    <Link to="invFactoring">MCA</Link>
                   </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Invoice Factoring
-                    </a>
+                  <li className="dropdown-item">
+                    <Link to="invFactoring">Invoice Factoring</Link>
                   </li>
                 </ul>
               </li>
@@ -80,12 +76,7 @@ const Menu = () => {
                 </a>
                 <ul className="dropdown-menu">
                   <li className="dropdown-item">
-                    <Link
-                      to="BusinessConsulting"
-                      
-                    >
-                      Business Consulting
-                    </Link>
+                    <Link to="BusinessConsulting">Business Consulting</Link>
                   </li>
                   <li className="dropdown-item">
                     <Link to="SolutionImplementation">
@@ -138,9 +129,9 @@ const Menu = () => {
               Book a Demo
             </button>
             <div className="btnGroup">
-              <button type="button" className="btn btn-success btnFill">
+              <NavHashLink to='#reachUs' className="btn btn-success btnFill">
                 Contact Us
-              </button>
+              </NavHashLink>
             </div>
           </div>
         </nav>

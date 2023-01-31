@@ -1,6 +1,11 @@
-#BusinessConsulting .bg, #solutionImplementation .bg{
+#BusinessConsulting .bg, #solutionImplementation .bg, #maintenanceSupport .bg{
     background-color: #DFEFE4;
     color:#000;
+}
+#BusinessConsulting h2,
+#solutionImplementation h2,
+#maintenanceSupport h2{
+font-weight: bold;
 }
 .bg h6{
     font-weight: 700;
@@ -11,8 +16,7 @@
 }
 .bg h1{
 font-weight: 700 !important;
-    font-size: 60px !important;
-    line-height: 110% !important;
+     
     letter-spacing: -0.03em !important;
     color: #1A191E !important;
 }
@@ -32,23 +36,23 @@ font-weight: 700 !important;
         font-size: 34px !important;
         line-height: 45px !important;
     }
+     
     .bg h1{
-        font-size: 25px !important;
+        font-size: 20px !important;
+        line-height: 26px !important;
     }
-    .bg h6{
-        font-size: 15px !important;
-    }
+    
 }
 
 @media screen and (max-width:576px) {
-.bg h1 {
-        font-size: 18px !important;
-    }
-
     .bg h6 {
         font-size: 12px !important;
     }
     #BusinessConsulting h2, #BusinessConsulting p{
         text-align: center !important;
     }
+         #BusinessConsulting .title {
+             font-size: 20px !important;
+             line-height: 26px !important;
+         }
 }

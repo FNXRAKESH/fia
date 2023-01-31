@@ -20,6 +20,10 @@ border: 1px solid #E9E9E9;
 .accordion-item:last-child{
     border: 0;
 }
+#faq a{
+    text-decoration: underline;
+    font-weight: bold;
+}
 .reach{
     background-color: #DFEFE4;
     color:#1A191E;
