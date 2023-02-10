@@ -5,10 +5,10 @@ import Faq from '../../components/faq/Faq';
 import RequestCall from '../../components/requestCall/RequestCall';
 import './index.css'
 import bg from '/assets/service/bg2.png'
-import s1 from '/assets/service/s1.png';
-import s2 from '/assets/service/s2.png';
-import s3 from '/assets/service/s3.png';
-import s4 from '/assets/service/s4.png';
+import s1 from '/assets/service/si1.png';
+import s2 from '/assets/service/si2.png';
+import s3 from '/assets/service/si3.png';
+import s4 from '/assets/service/si4.png';
 
 const SolutionImplementation = () => {
    useEffect(() => {
@@ -16,7 +16,7 @@ const SolutionImplementation = () => {
    }, []);
     return (
       <div id="solutionImplementation">
-        <div className="bg py-5">
+        <div className="bg pt-5">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-7">
@@ -85,7 +85,7 @@ const SolutionImplementation = () => {
           <div className="row mt-5 align-items-center">
             <div className="col-md-5 text-end d-flex justify-content-center flex-column">
               <h2>
-                We Will Develop a{' '}
+                We Develop a{' '}
                 <span style={{ color: '#2B9348' }}>
                   Flexible Lending Product
                 </span>
@@ -95,12 +95,10 @@ const SolutionImplementation = () => {
               </div>
               <p>
                 We know that every lender has diverse needs, so we create a
-                lending product that can be tailored to different types of
-                businesses and different stages of growth.
-              </p>
-              <p>
-                This includes offering a range of loan amounts, terms & interest
-                rates to suit their specific needs.
+                lending product that can be tailored fit to different types of
+                businesses and different stages of growth. This includes
+                offering a range of loan amounts, terms & interest rates to suit
+                their specific needs.
               </p>
             </div>
             <div className="col-md-2 d-none d-md-block"></div>
@@ -123,19 +121,19 @@ const SolutionImplementation = () => {
                 <img src={s3} alt="bc" className="img-fluid" />
               </div>
               <p>
-                We also understand that small businesses lenders often have
-                limited credit history and collateral. Therefore, we establish
-                clear and transparent underwriting criteria that take into
-                account a variety of factors such as cash flow, business
-                experience, and personal credit, to ensure that the lending
-                process is fair and objective.
+                We also understand that small businesses often have limited
+                credit history and collateral. Therefore, we establish clear and
+                transparent underwriting criteria that take into account a
+                variety of factors such as cash flow, business experience, and
+                personal credit, to ensure that the lending process is fair and
+                objective.
               </p>
             </div>
           </div>
           <div className="row mt-5 align-items-center">
             <div className="col-md-5 text-end d-flex justify-content-center flex-column">
               <h2>
-                <span style={{ color: '#2B9348' }}>Implement</span> a Robust
+                <span style={{ color: '#2B9348' }}>We Implement</span> a Robust
                 Loan Management System
               </h2>
               <div className="col-md-5 d-flex d-md-none justify-content-center">
@@ -156,9 +154,8 @@ const SolutionImplementation = () => {
               <img src={s4} alt="bc" className="img-fluid" />
             </div>
           </div>
-           
         </div>
-        <RequestCall />
+        <RequestCall title="Experience Powerful and Reliable Solutions with Effortless Implementation"/>
         <Faq />
       </div>
     );

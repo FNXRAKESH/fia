@@ -266,18 +266,16 @@ const Faq = () => {
               <h4 className="pt-2">Have any Questions?</h4>
               <p>We’re available 24/7</p>
 
-              <form
-                action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
-                method="POST"
-              >
-                <input type="hidden" name="oid" value="00D2x000005O1U3" />
+              <form action="https://formspree.io/f/mjvdgper" method="POST">
+                {/* <input type="hidden" name="oid" value="00D2x000005O1U3" />
                 <input
                   type="hidden"
                   name="retURL"
                   value="https://fiatechs.com/#/"
-                />
+                /> */}
                 <div className="mb-3">
                   <input
+                    required
                     type="text"
                     className="form-control"
                     id="last_name"
@@ -288,36 +286,7 @@ const Faq = () => {
                 </div>
                 <div className="mb-3">
                   <input
-                    type="email"
-                    className="form-control"
-                    id="email"
-                    name="email"
-                    aria-describedby="email"
-                    placeholder="Email Address"
-                  />
-                </div>
-                <div className="mb-3">
-                  <input
-                    type="text"
-                    className="form-control"
-                    id="company"
-                    name="company"
-                    aria-describedby="Comapany"
-                    placeholder="Company"
-                  />
-                </div>
-                <div className="mb-3">
-                  <input
-                    type="text"
-                    className="form-control"
-                    id="00N2x000008gJ5p"
-                    name="00N2x000008gJ5p"
-                    aria-describedby="Designation"
-                    placeholder="Designation"
-                  />
-                </div>
-                <div className="mb-4">
-                  <input
+                    required
                     type="tel"
                     className="form-control"
                     id="phone"
@@ -326,14 +295,26 @@ const Faq = () => {
                     placeholder="Phone Number"
                   />
                 </div>
-                <div className="d-none">
+                <div className="mb-4">
+                  <input
+                    required
+                    type="email"
+                    className="form-control"
+                    id="email"
+                    name="email"
+                    aria-describedby="email"
+                    placeholder="Email Address"
+                  />
+                </div>
+
+                {/* <div className="d-none">
                   <input
                     id="lead_source"
                     name="lead_source"
                     value="fiatechs"
                     readOnly
                   />
-                </div>
+                </div> */}
                 <div className="mb-3">
                   <button type="submit" className="btn btn-success">
                     Request a Call Back

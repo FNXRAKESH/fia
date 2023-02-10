@@ -1,6 +1,6 @@
 import React from 'react';
 import './WithUs.css'
-import img1 from '/assets/howitworks.png'
+// import img1 from '/assets/howitworks.png'
 
 const WithUs = () => {
     return (<div id='withUs' className='pt-5'>
@@ -9,7 +9,7 @@ const WithUs = () => {
             <h1 className='pt-5'>Why go with us?</h1>
             <div id='glow' className='row py-5 mb-5 align-items-center'>
                 <div className='col-md-6 image'>
-                    <img src={img1} alt='' className='img-fluid'/>
+                    {/* <img src={img1} alt='' className='img-fluid'/> */}
                 </div>
                 <div className='col-md-6 description '>
                     <div className='circle'></div>

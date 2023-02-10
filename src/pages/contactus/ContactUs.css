@@ -1,0 +1,21 @@
+#contactUs{
+    background-color: #DFEFE4;
+    padding: 100px 0;
+}
+#contactUs h6{
+    font-weight: 700;
+}
+#contactUs .title{
+    color: #2B9348;
+   
+}
+#contactUs .alternate p{
+color: rgba(2, 18, 10, 0.6);
+}
+
+#contactUs .alternate p a{
+    color:#000
+}
+#contactUs hr{
+    border-color: #C1D5C7 !important;
+}

@@ -56,6 +56,7 @@ const Header = () => {
                 </div>
                 <div className=" d-flex mb-5">
                   <button
+                    onClick={()=>navigate('contact')}
                     type="button"
                     className="btn btn-success btnFill me-4"
                   >
@@ -64,14 +65,13 @@ const Header = () => {
                   <button
                     type="button"
                     className="btn text-success"
-                    onClick={() => navigate('invFactoring')}
+                    onClick={() => navigate('mca')}
                   >
                     Learn More
                     <span className="ms-2">
                       <FontAwesomeIcon icon={faArrowRight} color="#2B9348" />
                     </span>
                   </button>
-                  {/* <div className='btnOutline ms-3'><button type='button' className='btn btn-outline-success' onClick={()=>navigate('services')}>Why choose?</button></div> */}
                 </div>
               </div>
             </div>
@@ -117,7 +117,7 @@ const Header = () => {
               <button
                 type="button"
                 className="btn text-success"
-                onClick={() => navigate('invFactoring')}
+                onClick={() => navigate('mca')}
               >
                 Learn More
                 <span className="ms-2">

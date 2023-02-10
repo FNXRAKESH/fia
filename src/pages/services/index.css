@@ -48,7 +48,7 @@ font-weight: 700 !important;
     .bg h6 {
         font-size: 12px !important;
     }
-    #BusinessConsulting h2, #BusinessConsulting p{
+    #BusinessConsulting h2, #BusinessConsulting p, #solutionImplementation h2, #solutionImplementation p,#MaintenanceSupport h2, #MaintenanceSupport p{
         text-align: center !important;
     }
          #BusinessConsulting .title {

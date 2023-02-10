@@ -3,14 +3,29 @@
     background-color: #DFEFE4;
     color: #000;
 }
+#mca .keys{
+    background-color: transparent;
+    min-height: auto !important;
+}
 
+#mca .keys:hover h4,#mca .keys:hover p{
+    background-color: transparent;
+    color: #000 !important;
+}
 .invFactSteps h1{
     text-align: center;
 }
 .invFactSteps h1 span{
     color: #2B9348;
 }
-
+#mca .imgContainer{
+    width: 75px;
+    height: auto;
+}
+#mca .imgContainer img{
+    width: 100%;
+    height: 100%;
+}
 .invFactSteps{
     padding-top: 100px;
 }
@@ -22,17 +37,22 @@
      padding: 50px 0;
     z-index:0
 }
-.invSteps::before{
-    content: "";
+.stepItem::before{
+    content: "\2192";
     position: absolute;
-    width: 90%;
-    height: 1px;
-    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='green' stroke-width='1' stroke-dasharray='14%2c 14' stroke-dashoffset='88' stroke-linecap='square'/%3e%3c/svg%3e");
-    top:40%;
-    left: 5%;
-    z-index:-1
-}   
+    width: 100%;
+    /* background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='green' stroke-width='1' stroke-dasharray='14%2c 14' stroke-dashoffset='88' stroke-linecap='square'/%3e%3c/svg%3e"); */
+    top:20%;
+    right: 100%;
+    font-size: 50px;
+    z-index:-1;
+    color: #2B9348;
+}  
+.stepItem:nth-child(1)::before{
+    content: "";
+}
 .stepItem{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,9 +63,10 @@
     width: 146px;
     height: 146px;
     border-radius: 50%;
-
+    
     background-color: #2B9348;
 }
+
 .invSteps .stepItem p{
     padding: 12px 0;
     text-align: center;
@@ -56,17 +77,17 @@
     padding: 20px;
     width: 400px;
     margin: 10px;
-    display: grid;
-    grid-template-columns: auto auto;
+    /* display: grid;
+    grid-template-columns: auto auto; */
     
 }
-.cards .cardItem .circle{
+/* .cards .cardItem .circle{
     width: 76px;
     height: 76px;
     background-color: #FFFFFF;
     border-radius: 50%;
     margin-right:  10px;
-}
+} */
 
 @media only screen and (max-width:1024px) {
     .invSteps {
@@ -85,9 +106,31 @@
  
 
 @media screen and (max-width:576px) {
+    .stepItem::before {
+            content: "";
+        }
     .bg h6 {
         font-size: 12px !important;
     }
 
-    
+        #invFactoring h4,
+        #mca h4,#invFactoring p,#invFactoring h2,
+        #mca h2,
+        #mca p{
+            text-align: center;
+        }
+        .keys p{
+            text-align: left !important;
+        }
+        .points p{
+            padding-left: 10px !important;
+            text-align: left !important;
+            width: max-content;
+        }
+        .invSteps{
+            justify-content: center !important;
+        }
+                .invSteps .stepItem:nth-child(even) {
+                    margin-left: 10px;
+                }
 }

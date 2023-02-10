@@ -5,18 +5,19 @@ import Faq from '../../components/faq/Faq';
 import RequestCall from '../../components/requestCall/RequestCall';
 import './index.css'
 import bg from '/assets/service/bg3.png'
-import s1 from '/assets/service/s1.png';
-import s2 from '/assets/service/s2.png';
-import s3 from '/assets/service/s3.png';
-import s4 from '/assets/service/s4.png';
-import s5 from '/assets/service/s5.png';
+import s1 from '/assets/service/ms1.png';
+import s2 from '/assets/service/ms2.png';
+import s3 from '/assets/service/ms3.png';
+import s4 from '/assets/service/ms4.png';
+import s5 from '/assets/service/ms5.png';
+import s6 from '/assets/service/ms6.png';
 const MaintenanceSupport = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
     <div id="maintenanceSupport">
-      <div className="bg py-5">
+      <div className="bg pt-5">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-6">
@@ -90,9 +91,9 @@ const MaintenanceSupport = () => {
               <img src={s2} alt="bc" className="img-fluid" />
             </div>
             <p>
-              Evaluate the effectiveness of the solution over time, and make any
-              necessary adjustments to ensure that it continues to meet clients'
-              needs and goals.
+              We evaluate the effectiveness of the solution over time, and make
+              any necessary adjustments to ensure that it continues to meet
+              clients' needs and goals.
             </p>
           </div>
           <div className="col-md-2 d-none d-md-block"></div>
@@ -114,23 +115,22 @@ const MaintenanceSupport = () => {
               <img src={s3} alt="bc" className="img-fluid" />
             </div>
             <p>
-              We Provide training and support to ensure that clients are able to
-              use the lending solution efficiently, and can make the most of the
-              financing they have obtained.
+              We regularly provide training and support to ensure that clients
+              are able to use the lending solution efficiently.
             </p>
           </div>
         </div>
         <div className="row mt-5 align-items-center">
           <div className="col-md-5 text-end d-flex justify-content-center flex-column">
             <h2>
-              We are Ensuring
-              <span style={{ color: '#2B9348' }}> Compliance </span>at all times
+              We ensure
+              <span style={{ color: '#2B9348' }}> Compliance </span>
             </h2>
             <div className="col-md-5 d-flex d-md-none justify-content-center">
               <img src={s4} alt="bc" className="img-fluid" />
             </div>
             <p>
-              Keep up to date with the latest regulations and compliance
+              We Keep up to date with the latest regulations and compliance
               requirements, and ensure that the lending solution is in line with
               the current laws and standards.
             </p>
@@ -156,7 +156,7 @@ const MaintenanceSupport = () => {
               <img src={s5} alt="bc" className="img-fluid" />
             </div>
             <p>
-              Help clients to set up, and monitor reporting and monitoring
+              We help clients to set up, and monitor reporting and monitoring
               tools, and provide guidance on how to use the financing to achieve
               their business objectives.
             </p>
@@ -165,24 +165,25 @@ const MaintenanceSupport = () => {
         <div className="row mt-5 align-items-center">
           <div className="col-md-5 text-end d-flex justify-content-center flex-column">
             <h2>
-              <span style={{ color: '#2B9348' }}> Dedicated Support </span>for
+              <span style={{ color: '#2B9348' }}>Dedicated Support </span>for
               Resolving Issues with our Lending Solution
             </h2>
             <div className="col-md-5 d-flex d-md-none justify-content-center">
-              <img src={s4} alt="bc" className="img-fluid" />
+              <img src={s6} alt="bc" className="img-fluid" />
             </div>
             <p>
-              Help clients to solve any operational, technical or financial
-              problems that they may encounter while using the lending solution.
+              Our dedicated support team helps clients to solve any operational,
+              technical or financial problems that they may encounter while
+              using the lending solution.
             </p>
           </div>
           <div className="col-md-2 d-none d-md-block"></div>
           <div className="col-md-5 d-none d-md-flex justify-content-center">
-            <img src={s4} alt="bc" className="img-fluid" />
+            <img src={s6} alt="bc" className="img-fluid" />
           </div>
         </div>
       </div>
-      <RequestCall />
+      <RequestCall title="Lead the Way with Our Ongoing Maintenance and Upgrades" />
       <Faq />
     </div>
   );

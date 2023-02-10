@@ -10,7 +10,6 @@ import ph5 from '/assets/service/ark.png'
 import ph6 from '/assets/service/sc.png'
 import ph7 from '/assets/service/pa.png'
 import ph8 from '/assets/service/rc.png'
-import email from '/assets/email.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faEnvelopeCircleCheck, faList } from '@fortawesome/free-solid-svg-icons';
 
@@ -25,7 +24,7 @@ const HowItWorks = () => {
           <div className="col-lg-5">
             <h2 className="title">
               Simplify Your Customer Journey with Our{' '}
-              <span>MCA Origination</span>
+              <span>Origination</span>
             </h2>
             <p className="py-3">
               Our Process Takes Customers Through Pre-Qualification, Loan
@@ -72,7 +71,7 @@ const HowItWorks = () => {
               </div>
             </div>
             <div className="cta my-3">
-              <h6 className="m-0">Learn More about MCA Origination</h6>
+              <h6 className="m-0">Learn More about Origination</h6>
               <FontAwesomeIcon icon={faArrowRight} />
             </div>
           </div>

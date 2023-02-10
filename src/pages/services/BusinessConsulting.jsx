@@ -16,7 +16,7 @@ const BusinessConsulting = () => {
    }, []);
     return (
       <div id="BusinessConsulting">
-        <div className="bg py-5">
+        <div className="bg pt-5">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-6">
@@ -76,15 +76,14 @@ const BusinessConsulting = () => {
               <p>
                 Before providing any advice, we try to gain a deep understanding
                 of the client's business, including their products, services,
-                target market, and industry. We gather this information through
-                research and meetings with the client.
+                target market, and industry.
               </p>
             </div>
           </div>
           <div className="row mt-5 align-items-center">
             <div className="col-md-5 text-end d-flex justify-content-center flex-column">
               <h2>
-                We will Identify Specific{' '}
+                We Identify Specific{' '}
                 <span style={{ color: '#2B9348' }}>Problem Areas</span>
               </h2>
               <div className="col-md-5 d-flex d-md-none justify-content-center">
@@ -109,7 +108,7 @@ const BusinessConsulting = () => {
             <div className="col-md-2 d-none d-md-block"></div>
             <div className="col-md-5 d-flex justify-content-center flex-column">
               <h2>
-                We will Develop a Customized{' '}
+                We Develop a Customized{' '}
                 <span style={{ color: '#2B9348' }}>Solution</span>
               </h2>
               <div className="col-md-5 d-flex d-md-none justify-content-center">
@@ -167,7 +166,7 @@ const BusinessConsulting = () => {
             </div>
           </div>
         </div>
-        <RequestCall />
+        <RequestCall title="Get Professional Business Growth Consulting"/>
         <Faq />
       </div>
     );

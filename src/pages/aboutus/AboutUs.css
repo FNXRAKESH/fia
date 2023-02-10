@@ -1,0 +1,33 @@
+ 
+#aboutUs .bg{
+    background-color: #DFEFE4;
+}
+#aboutUs .bg h6 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 110%;
+    letter-spacing: -0.03em;
+    color: #2B9348;
+}
+
+#aboutUs .bg h1 {
+    font-weight: 700 !important;
+
+    letter-spacing: -0.03em !important;
+    color: #1A191E !important;
+}
+
+#aboutUs .bgGreen{
+    
+    padding: 100px 0;
+}
+
+#aboutUs hr{
+    border-color: #C1D5C7;
+}
+
+@media screen and (max-width:1024px) {
+    #aboutUs h2{
+        text-align: center;
+    }
+}
