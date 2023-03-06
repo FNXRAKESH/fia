@@ -5,6 +5,14 @@ import Faq from '../../components/faq/Faq';
 import RequestCall from '../../components/requestCall/RequestCall';
 import './index.css';
 import bg from '/assets/solutions/bg.png';
+import submission from '/assets/solutions/submission.png';
+import validation from '/assets/solutions/validation.png';
+import fund from '/assets/solutions/fund.png';
+import repay from '/assets/solutions/repay.png';
+import if1 from '/assets/solutions/if1.png';
+import if2 from '/assets/solutions/if2.png';
+import if3 from '/assets/solutions/if3.png';
+import if4 from '/assets/solutions/if4.png';
 
 
 const InvFactoring = () => {
@@ -18,7 +26,9 @@ const InvFactoring = () => {
           <div className="row align-items-center">
             <div className="col-6">
               <h6>Invoice Financing Simplified</h6>
-              <h1>Unlock Your Cash Flow with Our Invoice Financing Services</h1>
+              <h1>
+                Unlock Your Cash Flow with Our Invoice Financing SaaS Solution
+              </h1>
             </div>
             <div className="col-6">
               <img src={bg} alt="bc" className="img-fluid" />
@@ -36,7 +46,7 @@ const InvFactoring = () => {
             </h1>
 
             <button type="button" className="btn text-success p-0 mb-5">
-              Read more about Invoice Factoring in bur blog
+              Read more about Invoice financing in our blog
               <span className="ms-2">
                 <FontAwesomeIcon icon={faArrowRight} color="#2B9348" />
               </span>
@@ -69,7 +79,9 @@ const InvFactoring = () => {
           </h1>
           <div className="invSteps container">
             <div className="stepItem">
-              <div className="circle"></div>
+              <div className="circle">
+                <img src={submission} alt="" className="img-fluid" />
+              </div>
               <p>
                 Invoice
                 <br />
@@ -77,7 +89,9 @@ const InvFactoring = () => {
               </p>
             </div>
             <div className="stepItem">
-              <div className="circle"></div>
+              <div className="circle">
+                <img src={validation} alt="" className="img-fluid" />
+              </div>
               <p>
                 Invoice
                 <br />
@@ -85,7 +99,9 @@ const InvFactoring = () => {
               </p>
             </div>
             <div className="stepItem">
-              <div className="circle"></div>
+              <div className="circle">
+                <img src={fund} alt="" className="img-fluid" />
+              </div>
               <p>
                 Funds
                 <br />
@@ -93,7 +109,9 @@ const InvFactoring = () => {
               </p>
             </div>
             <div className="stepItem">
-              <div className="circle"></div>
+              <div className="circle">
+                <img src={repay} alt="" className="img-fluid" />
+              </div>
               <p>
                 Repayment
                 <br />
@@ -102,46 +120,69 @@ const InvFactoring = () => {
             </div>
           </div>
         </div>
-        <div className="cards d-flex justify-content-center flex-wrap">
-          <div className="cardItem">
-            
-            <div>
-              <p className="m-0">
-                <small>Step 1</small>
+        <div className="row mt-5 align-items-center ">
+          <div className="col-md-5 d-none d-md-flex justify-content-center">
+            <img src={if1} alt="bc" className="img-fluid" />
+          </div>
+          <div className="col-md-2 d-none d-md-block"></div>
+          <div className="col-md-5 d-flex justify-content-center flex-column">
+            <div className="col-md-5 d-flex d-md-none justify-content-center">
+              <img src={if1} alt="bc" className="img-fluid" />
+            </div>
+            <div className="cardItem">
+              <p className="m-0 pt-4" style={{ color: '#2B9348' }}>
+                <small className="fw-bold">STEP 1</small>
               </p>
-              <p className="m-0 pb-2 fw-bold">Invoice Submission</p>
+              <h2 className="m-0 pb-2 fw-bold">Invoice Submission</h2>
               <p>
                 <small>
-                  Just submit the invoice online, Fia Technologies Automated
-                  invoice financing solution will do the rest! It will save you
-                  time and money by automatically doing the assessment of
-                  creditworthiness of the invoices submitted
+                  Just submit the invoice online, Financial Information
+                  Automation(FIA) Technologies' Automated invoice financing
+                  solution will do the rest! It will save you time and money by
+                  automatically doing the assessment of creditworthiness of the
+                  invoices submitted
                 </small>
               </p>
             </div>
           </div>
-          <div className="cardItem">
-            
-            <div>
-              <p className="m-0">
-                <small>Step 2</small>
+        </div>
+        <div className="row mt-5 align-items-center">
+          <div className="col-md-5 text-end d-flex justify-content-center flex-column">
+            <div className="col-md-5 d-flex d-md-none justify-content-center">
+              <img src={if2} alt="bc" className="img-fluid" />
+            </div>
+            <div className="cardItem">
+              <p className="m-0 pt-4" style={{ color: '#2B9348' }}>
+                <small className="fw-bold">STEP 2</small>
               </p>
-              <p className="m-0 pb-2 fw-bold">Invoice Validation</p>
+              <h2 className="m-0 pb-2 fw-bold">Invoice Validation</h2>
               <p>
                 <small>
-                  Invoices are validaed automatically by checking that they
+                  Invoices are validated automatically by checking that they
                   fulfill all the acceptance criteria for the lendor.
                 </small>
               </p>
             </div>
           </div>
-          <div className="cardItem">
-            
-            <div>
-              <p className="m-0">
-                <small>Step 3</small>
+          <div className="col-md-2 d-none d-md-block"></div>
+          <div className="col-md-5 d-none d-md-flex justify-content-center">
+            <img src={if2} alt="bc" className="img-fluid" />
+          </div>
+        </div>
+        <div className="row mt-5 align-items-center ">
+          <div className="col-md-5 d-none d-md-flex justify-content-center">
+            <img src={if3} alt="bc" className="img-fluid" />
+          </div>
+          <div className="col-md-2 d-none d-md-block"></div>
+          <div className="col-md-5 d-flex justify-content-center flex-column">
+            <div className="col-md-5 d-flex d-md-none justify-content-center">
+              <img src={if3} alt="bc" className="img-fluid" />
+            </div>
+            <div className="cardItem">
+              <p className="m-0 pt-4" style={{ color: '#2B9348' }}>
+                <small className="fw-bold">STEP 3</small>
               </p>
-              <p className="m-0 pb-2 fw-bold">Funds Disbursement</p>
+              <h2 className="m-0 pb-2 fw-bold">Funds Disbursement</h2>
               <p>
                 <small>
                   After fullifilling the eligibility criteria both the parties
@@ -152,13 +193,17 @@ const InvFactoring = () => {
               </p>
             </div>
           </div>
-          <div className="cardItem">
-            
-            <div>
-              <p className="m-0">
-                <small>Step 4</small>
+        </div>
+        <div className="row mt-5 align-items-center">
+          <div className="col-md-5 text-end d-flex justify-content-center flex-column">
+            <div className="col-md-5 d-flex d-md-none justify-content-center">
+              <img src={if4} alt="bc" className="img-fluid" />
+            </div>
+            <div className="cardItem">
+              <p className="m-0 pt-4" style={{ color: '#2B9348' }}>
+                <small className="fw-bold">STEP 4</small>
               </p>
-              <p className="m-0 pb-2 fw-bold">Repayment Collection</p>
+              <h2 className="m-0 pb-2 fw-bold">Repayment Collection</h2>
               <p>
                 <small>
                   Our collection solution for invoice financing is designed to
@@ -168,10 +213,13 @@ const InvFactoring = () => {
               </p>
             </div>
           </div>
-           
+          <div className="col-md-2 d-none d-md-block"></div>
+          <div className="col-md-5 d-none d-md-flex justify-content-center">
+            <img src={if4} alt="bc" className="img-fluid" />
+          </div>
         </div>
       </div>
-      <RequestCall title="Streamline Your Cash Flow with Our Invoice Factoring Services" />
+      <RequestCall title="Streamline Your Cash Flow with Our Invoice financing Services" />
       <Faq />
     </div>
   );

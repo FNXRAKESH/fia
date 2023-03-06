@@ -1,6 +1,6 @@
  
 #aboutUs .bg{
-    background-color: #DFEFE4;
+    background-color: #fff;
 }
 #aboutUs .bg h6 {
     font-weight: 700;
@@ -18,7 +18,7 @@
 }
 
 #aboutUs .bgGreen{
-    
+    background-color: #DFEFE4;
     padding: 100px 0;
 }
 

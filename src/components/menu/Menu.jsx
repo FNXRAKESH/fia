@@ -1,8 +1,10 @@
 import React, { useEffect } from 'react';
 import './Menu.css';
-import logo from '/assets/logo.png';
+import logo from '/assets/logo1.png';
 import { NavHashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Menu = () => {
   useEffect(() => {
@@ -36,13 +38,15 @@ const Menu = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <FontAwesomeIcon icon={faBars} color="#2B9348" />
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav mx-auto">
               <li className="nav-item">
                 <Link className="nav-link" to="/">
-                  Home
+                  <span data-bs-target="#navbarNav" data-bs-toggle="collapse">
+                    Home
+                  </span>
                 </Link>
               </li>
               <li className="nav-item dropdown">
@@ -57,10 +61,24 @@ const Menu = () => {
                 </a>
                 <ul className="dropdown-menu">
                   <Link to="mca">
-                    <li className="dropdown-item">MCA</li>
+                    <li className="dropdown-item">
+                      <span
+                        data-bs-target="#navbarNav"
+                        data-bs-toggle="collapse"
+                      >
+                        Small Business Lending
+                      </span>
+                    </li>
                   </Link>
                   <Link to="invFactoring">
-                    <li className="dropdown-item">Invoice Financing</li>
+                    <li className="dropdown-item">
+                      <span
+                        data-bs-target="#navbarNav"
+                        data-bs-toggle="collapse"
+                      >
+                        Invoice Financing
+                      </span>
+                    </li>
                   </Link>
                 </ul>
               </li>
@@ -76,13 +94,34 @@ const Menu = () => {
                 </a>
                 <ul className="dropdown-menu">
                   <Link to="BusinessConsulting">
-                    <li className="dropdown-item">Business Consulting</li>
+                    <li className="dropdown-item">
+                      <span
+                        data-bs-target="#navbarNav"
+                        data-bs-toggle="collapse"
+                      >
+                        Business Consulting
+                      </span>
+                    </li>
                   </Link>
                   <Link to="SolutionImplementation">
-                    <li className="dropdown-item">Solution Implementation</li>
+                    <li className="dropdown-item">
+                      <span
+                        data-bs-target="#navbarNav"
+                        data-bs-toggle="collapse"
+                      >
+                        Solution Implementation
+                      </span>
+                    </li>
                   </Link>
                   <Link to="MaintenanceSupport">
-                    <li className="dropdown-item">Maintenance Support</li>
+                    <li className="dropdown-item">
+                      <span
+                        data-bs-target="#navbarNav"
+                        data-bs-toggle="collapse"
+                      >
+                        Maintenance Support
+                      </span>
+                    </li>
                   </Link>
                 </ul>
               </li>
@@ -95,35 +134,49 @@ const Menu = () => {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  About Us
+                  Company
                 </a>
                 <ul className="dropdown-menu">
                   <Link to="aboutus">
-                    <li className="dropdown-item">Company</li>
-                  </Link>
-                  <Link to="contact"></Link>
-                  <Link to="contact">
-                    <li className="dropdown-item">Contact Us</li>
+                    <li className="dropdown-item">
+                      <span
+                        data-bs-target="#navbarNav"
+                        data-bs-toggle="collapse"
+                      >
+                        About Us
+                      </span>
+                    </li>
                   </Link>
                 </ul>
               </li>
-              {/* <li className="nav-item">
-                <a className="nav-link" href="/">
-                  Blogs
-                </a>
-              </li>
               <li className="nav-item">
+                <Link to="blogs">
+                  <span data-bs-target="#navbarNav" data-bs-toggle="collapse">
+                    Blogs
+                  </span>
+                </Link>
+              </li>
+              {/* <li className="nav-item">
                 <a className="nav-link" href="/">
                   FAQ
                 </a>
               </li> */}
             </ul>
-            {/* <button type="button" className=" me-4 btn text-success">
-              Book a Demo
-            </button> */}
+            <button
+              type="button"
+              className="me-4 p-2 btn text-success"
+              data-bs-toggle="modal"
+              data-bs-target="#demoModal"
+            >
+              <span data-bs-target="#navbarNav" data-bs-toggle="collapse">
+                Book a Demo
+              </span>
+            </button>
             <div className="btnGroup">
               <Link to="contact" className="btn btn-success btnFill">
-                Book a Demo
+                <span data-bs-target="#navbarNav" data-bs-toggle="collapse">
+                  Contact Us
+                </span>
               </Link>
             </div>
           </div>

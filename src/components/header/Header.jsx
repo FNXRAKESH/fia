@@ -18,12 +18,12 @@ const Header = () => {
             <div className="col-md-6">
               <h5 id="top">Empower your business!</h5>
               <h1 className="heading py-3">
-                Dynamic Small Business Lending Solutions
+                The Complete Salesforce Based Lending Solution
               </h1>
               <p>
-                Get Unmatched Support for Your Business with Our MCA Solution.
-                Navigate Change and Advance Together with Our Continuous
-                Improvement and Partnership.
+                At Financial Information Automation (FIA) Technologies, We build
+                modern Salesforce based workflows that save time, make lending
+                efficient, and create satisfied borrowers.
               </p>
               <div className="d-none d-lg-block">
                 <div className="points row flex-wrap justify-content-between mt-5 mb-3">
@@ -31,13 +31,17 @@ const Header = () => {
                     <span>
                       <FontAwesomeIcon icon={faCheck} color="#2B9348" />
                     </span>
-                    <p className="m-0 ps-3">Simplify Customer Journey</p>
+                    <p className="m-0 ps-3">
+                      Simplify Customer Journey
+                    </p>
                   </div>
                   <div className="col-6 d-flex align-items-center">
                     <span>
                       <FontAwesomeIcon icon={faCheck} color="#2B9348" />
                     </span>
-                    <p className="m-0 ps-3">Manage Loan Process Efficiently</p>
+                    <p className="m-0 ps-3">
+                      One platform for everything
+                    </p>
                   </div>
                 </div>
                 <div className="points row flex-wrap justify-content-between mb-5">
@@ -45,18 +49,19 @@ const Header = () => {
                     <span>
                       <FontAwesomeIcon icon={faCheck} color="#2B9348" />
                     </span>
-                    <p className="m-0 ps-3">Post Deployment Support</p>
+                    <p className="m-0 ps-3">Modular in design</p>
                   </div>
                   <div className="col-6 d-flex align-items-center">
                     <span>
                       <FontAwesomeIcon icon={faCheck} color="#2B9348" />
                     </span>
-                    <p className="m-0 ps-3">Third-party Integrations</p>
+                    <p className="m-0 ps-3">Ease of integration</p>
                   </div>
                 </div>
                 <div className=" d-flex mb-5">
                   <button
-                    onClick={()=>navigate('contact')}
+                    data-bs-toggle="modal"
+                    data-bs-target="#demoModal"
                     type="button"
                     className="btn btn-success btnFill me-4"
                   >
@@ -93,7 +98,9 @@ const Header = () => {
                 <span>
                   <FontAwesomeIcon icon={faCheck} color="#2B9348" />
                 </span>
-                <p className="m-0 ps-3">Manage Loan Process Efficiently</p>
+                <p className="m-0 ps-3">
+                  One platform for everything
+                </p>
               </div>
             </div>
             <div className="points row flex-wrap justify-content-between mb-5">
@@ -101,13 +108,13 @@ const Header = () => {
                 <span>
                   <FontAwesomeIcon icon={faCheck} color="#2B9348" />
                 </span>
-                <p className="m-0 ps-3">Post Deployment Support</p>
+                <p className="m-0 ps-3">Modular in design</p>
               </div>
               <div className="col-6 d-flex align-items-center">
                 <span>
                   <FontAwesomeIcon icon={faCheck} color="#2B9348" />
                 </span>
-                <p className="m-0 ps-3">Third-party Integrations</p>
+                <p className="m-0 ps-3">Ease of integration</p>
               </div>
             </div>
             <div className=" d-flex mb-5 justify-content-center">

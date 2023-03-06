@@ -13,7 +13,12 @@ nav button{
 .nav-link:hover{
     color:rgb(0, 0, 0)
 }
- 
+.navbar-toggler{
+    border: none !important;
+}
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
 #headerNav {
     top: -100px;
     transition: top 0.5s ease-in-out;

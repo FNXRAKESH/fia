@@ -1,5 +1,5 @@
 #tabInnerContent .tab-pane{
-    background-color: #DFEFE4;
+    background-color: #F8EEDF;
         box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
         border-radius: 12px;
         padding: 30px;
@@ -12,7 +12,7 @@
 }
 
  #tabContent .nav-pills .nav-item{
-    background-color: #BDE0C7;
+    background-color: #EFE1CB;
     padding: 0 !important;
     width: 300px;
 }
@@ -27,7 +27,7 @@ border-radius: 12px 0 0px 0px;
     width: 100%;
 }
 #tabContent .nav-pills .nav-link.active{
-background-color: #2B9348 !important;
+background-color: #EEB45B !important;
 width: 100%;
 }
 

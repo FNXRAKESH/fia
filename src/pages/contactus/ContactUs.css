@@ -19,3 +19,20 @@ color: rgba(2, 18, 10, 0.6);
 #contactUs hr{
     border-color: #C1D5C7 !important;
 }
+#contactForm {
+    
+    border-radius: 12px;
+    background-color: #fff;
+}
+
+#contactForm input,
+#contactForm textarea {
+    box-shadow: none;
+    outline: transparent;
+}
+
+#contactForm input:active,
+#contactForm input:focus,
+textarea:active,textarea:focus {
+    border-color: #2B9348 !important;
+}

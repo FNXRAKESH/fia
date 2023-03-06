@@ -22,7 +22,7 @@ const MaintenanceSupport = () => {
           <div className="row align-items-center">
             <div className="col-6">
               <h6>Keeping Your Product at Its Best</h6>
-              <h1>Stay Ahead with Our Continuous Maintenance and Upgrades</h1>
+              <h1>Stay Ahead with our Upgrades &amp; Maintenance</h1>
             </div>
             <div className="col-6">
               <img src={bg} alt="bc" className="img-fluid" />

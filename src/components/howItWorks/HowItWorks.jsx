@@ -24,7 +24,7 @@ const HowItWorks = () => {
           <div className="col-lg-5">
             <h2 className="title">
               Simplify Your Customer Journey with Our{' '}
-              <span>Origination</span>
+              <span>Small Business Lending Solutions</span>
             </h2>
             <p className="py-3">
               Our Process Takes Customers Through Pre-Qualification, Loan

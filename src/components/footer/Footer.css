@@ -35,3 +35,15 @@
     height: 26px;
     margin-right: 10px;
 }
+
+#footer .name{
+    border-left: 1px solid rgba(2, 18, 10, 0.1);;
+}
+#footer .fLinks{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 20px;
+    
+}
+
+ 

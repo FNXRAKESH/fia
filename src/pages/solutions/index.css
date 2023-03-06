@@ -34,7 +34,7 @@
     display: flex;
     position: relative;
     justify-content: space-between;
-     padding: 50px 0;
+    padding: 50px 0;
     z-index:0
 }
 .stepItem::before{
@@ -44,7 +44,7 @@
     /* background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='green' stroke-width='1' stroke-dasharray='14%2c 14' stroke-dashoffset='88' stroke-linecap='square'/%3e%3c/svg%3e"); */
     top:20%;
     right: 100%;
-    font-size: 50px;
+    font-size: 30px;
     z-index:-1;
     color: #2B9348;
 }  
@@ -63,10 +63,14 @@
     width: 146px;
     height: 146px;
     border-radius: 50%;
-    
+    position: relative;
     background-color: #2B9348;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+     
 }
-
+ 
 .invSteps .stepItem p{
     padding: 12px 0;
     text-align: center;
@@ -81,13 +85,7 @@
     grid-template-columns: auto auto; */
     
 }
-/* .cards .cardItem .circle{
-    width: 76px;
-    height: 76px;
-    background-color: #FFFFFF;
-    border-radius: 50%;
-    margin-right:  10px;
-} */
+ 
 
 @media only screen and (max-width:1024px) {
     .invSteps {

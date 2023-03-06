@@ -22,10 +22,10 @@ const Carousel = () => {
             <p className="scroll">
               We understand that the{' '}
               <b>business world is constantly changing</b>, and that's why we
-              are <b>dedicated to staying ahead of the curve</b> with our MCA
-              solution. We are committed to <b>continuous improvement</b> and
-              are always looking for ways to <b>enhance our product</b> and
-              services.
+              are <b>dedicated to staying ahead of the curve</b> with our Small
+              Business Lending solution. We are committed to{' '}
+              <b>continuous improvement</b> and are always looking for ways to{' '}
+              <b>enhance our product</b> and services.
             </p>
           </div>
         </div>

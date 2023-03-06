@@ -13,18 +13,18 @@ const Offerings = () => {
           <div className="offer ">
             <h6>Our Key Offerings</h6>
             <h1 className="pb-5">
-              Innovative Lending Solutions
+              Innovative Solutions
               <br />
-              for Financial Businesses
+              for Small Business Lending
             </h1>
           </div>
-          <div className="row">
+          <div id="offers" className="row">
             <div className="col-md-4 d-flex align-items-strech">
               <div className="keys key1 px-3 py-5">
                 <div className="imgContainer">
                   <img src={mca} alt="solutions" />
                 </div>
-                <h4>MCA Origination</h4>
+                <h4>Origination</h4>
                 <p className="py-3">
                   We help you attract potential borrowers by{' '}
                   <b>
@@ -32,7 +32,7 @@ const Offerings = () => {
                     processing.
                   </b>
                 </p>
-                <button className="btn ">Learn More</button>
+                {/* <button className="btn ">Learn More</button> */}
               </div>
             </div>
             <div className="col-md-4 d-flex align-items-strech">
@@ -43,9 +43,12 @@ const Offerings = () => {
                 <h4>Credit Analysis</h4>
                 <p className="py-3">
                   We analyze a business's creditworthiness and risk level to{' '}
-                  <b>determine their eligibility for an MCA loan.</b>
+                  <b>
+                    determine their eligibility for Small Business Lending
+                    loan.
+                  </b>
                 </p>
-                <button className="btn ">Learn More</button>
+                {/* <button className="btn ">Learn More</button> */}
               </div>
             </div>
             <div className="col-md-4 d-flex align-items-strech">
@@ -61,7 +64,7 @@ const Offerings = () => {
                     integrations.
                   </b>
                 </p>
-                <button className="btn ">Learn More</button>
+                {/* <button className="btn ">Learn More</button> */}
               </div>
             </div>
           </div>
@@ -71,7 +74,7 @@ const Offerings = () => {
                 <div className="imgContainer">
                   <img src={service} alt="solutions" />
                 </div>
-                <h4>MCA Servicing</h4>
+                <h4>Servicing</h4>
                 <p className="py-3">
                   We help you simplify the process of{' '}
                   <b>
@@ -79,7 +82,7 @@ const Offerings = () => {
                     reconciling loans.
                   </b>
                 </p>
-                <button className="btn ">Learn More</button>
+                {/* <button className="btn ">Learn More</button> */}
               </div>
             </div>
             <div className="col-md-4 d-flex align-items-strech">
@@ -93,7 +96,7 @@ const Offerings = () => {
                   take necessary corrective actions if needed through
                   visualisation.
                 </p>
-                <button className="btn ">Learn More</button>
+                {/* <button className="btn ">Learn More</button> */}
               </div>
             </div>
             <div className="col-md-4 d-flex align-items-strech">
@@ -103,21 +106,13 @@ const Offerings = () => {
                 </div>
                 <h4>Post-deployment Support</h4>
                 <p className="py-3">
-                  We offer{' '}
-                  <b>post-implementation support &amp; maintenance</b> for
-                  robustness.
+                  We offer <b>post-implementation support &amp; maintenance</b>{' '}
+                  for robustness.
                 </p>
-                <button className="btn ">Learn More</button>
+                {/* <button className="btn ">Learn More</button> */}
               </div>
             </div>
           </div>
-          {/* <h1 className='text-center py-5'>Ready to start growing your business?</h1>
-         <div className='d-flex justify-content-center'>
-           <div className='btnGroup'>
-                            <div className='outline'><span></span></div>
-                            <button type='button' className='btnFill'>Start your journey here</button>
-                        </div>
-        </div> */}
         </div>
       </div>
     );

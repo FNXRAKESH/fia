@@ -1,0 +1,11 @@
+#blogs{
+    position: relative;
+}
+#blogs .line {
+     
+    width: 100%;
+    height: 1px;
+    border: 1px solid #E9E9E9;
+    bottom: 0px;
+    left:0
+}

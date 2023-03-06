@@ -1,0 +1,18 @@
+#blogItems{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 50px;
+   
+}
+
+@media screen and (max-width: 420px) {
+    #blogItems{
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) !important;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    #blogItems {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)) !important;
+    }
+}

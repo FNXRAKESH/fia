@@ -31,7 +31,8 @@ const Mca = () => {
             <div className="col-6">
               <h6>Effortless Lending Operations</h6>
               <h1>
-                Revolutionizing Lending Operations with MCA SaaS Solutions
+                Revolutionizing Lending Operations with Small Business Lending
+                SaaS Solutions
               </h1>
             </div>
             <div className="col-6">
@@ -50,7 +51,7 @@ const Mca = () => {
             </h1>
 
             <button type="button" className="btn text-success p-0 mb-5">
-              Read more about MCA in our blog
+              Read more about Small Business Lending in our blog
               <span className="ms-2">
                 <FontAwesomeIcon icon={faArrowRight} color="#2B9348" />
               </span>
@@ -58,19 +59,20 @@ const Mca = () => {
           </div>
           <div className="col-md-6">
             <p>
-              Our MCA solutions can be particularly beneficial for small to
-              medium-sized businesses and start-ups that are looking to automate
-              their lending operations without investing in expensive
-              on-premises software or IT infrastructure. This solution also
-              helps businesses to reduce operational costs, improve their
-              lending decision-making, and increase their customer engagement.
+              Our Small Business Lending solutions can be particularly
+              beneficial for small to medium-sized businesses and start-ups that
+              are looking to automate their lending operations without investing
+              in expensive on-premises software or IT infrastructure. This
+              solution also helps businesses to reduce operational costs,
+              improve their lending decision-making, and increase their customer
+              engagement.
             </p>
           </div>
         </div>
         <hr className="mt-5" />
         <div className="invFactSteps">
           <h1 className="pb-5">
-            <span>Key Features</span> of MCA Solution
+            <span>Key Features</span> of Small Business Lending Solution
           </h1>
         </div>
         <div className="row">
@@ -210,9 +212,9 @@ const Mca = () => {
             </div>
           </div>
         </div>
-        <div className="row mt-5 align-items-center">
+        <div id="mcaOrigination" className="row mt-5 align-items-center">
           <div className="col-md-5 text-end d-flex justify-content-center flex-column">
-            <h2>MCA Origination</h2>
+            <h2>Small Business Lending Origination</h2>
             <div className="col-md-5 d-flex d-md-none justify-content-center">
               <img src={s2} alt="bc" className="img-fluid" />
             </div>
@@ -285,13 +287,13 @@ const Mca = () => {
               <img src={s3} alt="bc" className="img-fluid" />
             </div>
             <p>
-              MCA credit underwriting has been digitized with the use of
-              software for analyzing financial information and credit reports,
-              leading to faster approval times and more consistent decision
-              making. Borrowers can also submit their application online, making
-              the process more convenient and efficient. Underwriting can be
-              done by both humans and software, with the latter becoming more
-              prevalent in recent years.
+              Small Business Lending credit underwriting has been digitized with
+              the use of software for analyzing financial information and credit
+              reports, leading to faster approval times and more consistent
+              decision making. Borrowers can also submit their application
+              online, making the process more convenient and efficient.
+              Underwriting can be done by both humans and software, with the
+              latter becoming more prevalent in recent years.
             </p>
             <hr />
             <div className="points row flex-wrap justify-content-between mb-3">
@@ -340,15 +342,16 @@ const Mca = () => {
         </div>
         <div className="row mt-5 align-items-center">
           <div className="col-md-5 text-end d-flex justify-content-center flex-column">
-            <h2>MCA servicing</h2>
+            <h2>Small Business Lending servicing</h2>
             <div className="col-md-5 d-flex d-md-none justify-content-center">
               <img src={s4} alt="bc" className="img-fluid" />
             </div>
             <p>
-              MCA servicing is a process that uses digital tools and
-              technologies to manage and administer a MCA loan after it has been
-              disbursed. The process includes tasks such as collecting payments,
-              monitoring the borrower's account, and providing customer service.
+              Small Business Lending servicing is a process that uses digital
+              tools and technologies to manage and administer a Small Business
+              Lending loan after it has been disbursed. The process includes
+              tasks such as collecting payments, monitoring the borrower's
+              account, and providing customer service.
             </p>
             <hr />
             <div className="points row flex-wrap justify-content-between mb-3">
@@ -356,7 +359,7 @@ const Mca = () => {
                 <span>
                   <FontAwesomeIcon icon={faCheck} color="#2B9348" />
                 </span>
-                <p className="m-0 ps-3">MCA Performance</p>
+                <p className="m-0 ps-3">Small Business Lending Performance</p>
               </div>
               <div className="col-6 d-flex align-items-center">
                 <span>
@@ -405,17 +408,17 @@ const Mca = () => {
           </div>
           <div className="col-md-2 d-none d-md-block"></div>
           <div className="col-md-5 d-flex justify-content-center flex-column">
-            <h2>MCA Collections</h2>
+            <h2>Small Business Lending Collections</h2>
             <div className="col-md-5 d-flex d-md-none justify-content-center">
               <img src={s5} alt="bc" className="img-fluid" />
             </div>
             <p>
               The use of digital tools and technologies can improve the
-              efficiency and effectiveness of the MCA collections process. This
-              can include automation of tasks and the use of a secure and
-              user-friendly online platform for borrowers to access and make
-              payments, view their account status, and communicate with the
-              lender.
+              efficiency and effectiveness of the Small Business Lending
+              collections process. This can include automation of tasks and the
+              use of a secure and user-friendly online platform for borrowers to
+              access and make payments, view their account status, and
+              communicate with the lender.
             </p>
             <hr />
             <div className="points row flex-wrap justify-content-between mb-3">
@@ -463,7 +466,7 @@ const Mca = () => {
           </div>
         </div>
       </div>
-      <RequestCall title="Transformative MCA Lending with Cloud-Based Solutions" />
+      <RequestCall title="Transformative Small Business Lending with Cloud-Based Solutions" />
       <Faq />
     </div>
   );

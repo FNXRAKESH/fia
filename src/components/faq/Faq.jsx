@@ -266,7 +266,7 @@ const Faq = () => {
               <h4 className="pt-2">Have any Questions?</h4>
               <p>We’re available 24/7</p>
 
-              <form action="https://formspree.io/f/mjvdgper" method="POST">
+              <form action="https://formspree.io/f/xzbqeooe" method="POST">
                 {/* <input type="hidden" name="oid" value="00D2x000005O1U3" />
                 <input
                   type="hidden"
@@ -278,15 +278,17 @@ const Faq = () => {
                     required
                     type="text"
                     className="form-control"
-                    id="last_name"
-                    name="last_name"
+                    id="FullName"
+                    name="FullName"
                     aria-describedby="FullName"
                     placeholder="Full Name"
                   />
                 </div>
                 <div className="mb-3">
                   <input
+                    pattern="^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$"
                     required
+                    minLength={10}
                     type="tel"
                     className="form-control"
                     id="phone"

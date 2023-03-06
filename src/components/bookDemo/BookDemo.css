@@ -1,9 +1,9 @@
 #book-a-demo{
     background-color: #fff;
     /* box-shadow: 0px 13px 17px rgba(0, 0, 0, 0.1), inset 0px 7px 0px #2B9348; */
-    box-shadow: 0px 13px 17px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0px 13px 17px rgba(0, 0, 0, 0.1); */
         border-radius: 12px;
-        margin: 0 25px;
+        /* margin: 0 25px; */
 }
 
 #book-a-demo label{
@@ -13,7 +13,7 @@
 }
 #book-a-demo input, #book-a-demo select{
     box-shadow: none;
-    outline: none;
+    outline: transparent;
 }
 #book-a-demo input:active,#book-a-demo input:focus, select:active{
     border-color: #2B9348;
