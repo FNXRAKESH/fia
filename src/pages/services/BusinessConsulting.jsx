@@ -5,13 +5,23 @@ import Faq from '../../components/faq/Faq';
 import RequestCall from '../../components/requestCall/RequestCall';
 import './index.css'
 import bg from '/assets/service/bg.png'
-import s1 from '/assets/service/s1.png';
-import s2 from '/assets/service/s2.png';
-import s3 from '/assets/service/s3.png';
-import s4 from '/assets/service/s4.png';
-import s5 from '/assets/service/s5.png';
+import s1 from '/assets/service/bc1.png';
+import s2 from '/assets/service/bc2.png';
+import s3 from '/assets/service/bc3.png';
+import s4 from '/assets/service/bc4.png';
+import s5 from '/assets/service/bc5.png';
+import ReactGA from "react-ga4";
+import { useLocation } from "react-router-dom";
 const BusinessConsulting = () => {
+   const location = useLocation();
    useEffect(() => {
+     console.log("====================================");
+     console.log(location.pathname);
+     console.log("====================================");
+     ReactGA.send({
+       hitType: "pageview",
+       page: location.pathname
+     });
      window.scrollTo(0, 0);
    }, []);
     return (

@@ -8,11 +8,20 @@ import s3 from '/assets/aboutus/s3.png';
 import RequestCall from '../../components/requestCall/RequestCall';
 import Carousel from '../../components/carousel/Carousel';
 import Faq from '../../components/faq/Faq';
-
+import ReactGA from "react-ga4";
+import { useLocation } from "react-router-dom";
 const AboutUs = () => {
-     useEffect(() => {
-       window.scrollTo(0, 0);
-     }, []);
+      const location = useLocation();
+      useEffect(() => {
+        console.log("====================================");
+        console.log(location.pathname);
+        console.log("====================================");
+        ReactGA.send({
+          hitType: "pageview",
+          page: location.pathname,
+        });
+        window.scrollTo(0, 0);
+      }, []);
     return (
       <div id="aboutUs">
         <div className="bg pt-5">

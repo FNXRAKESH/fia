@@ -5,11 +5,11 @@ import Faq from '../../components/faq/Faq';
 import RequestCall from '../../components/requestCall/RequestCall';
 import './index.css';
 import bg from '/assets/solutions/mca.png';
-import s1 from '/assets/solutions/s1.png';
-import s2 from '/assets/solutions/s2.png';
-import s3 from '/assets/solutions/s3.png';
-import s4 from '/assets/solutions/s4.png';
-import s5 from '/assets/solutions/s5.png';
+import s1 from '/assets/solutions/si1.png';
+import s2 from '/assets/solutions/si2.png';
+import s3 from '/assets/solutions/si3.png';
+import s4 from '/assets/solutions/si4.png';
+import s5 from '/assets/solutions/si5.png';
 import service from '/assets/landing/service.png';
 import support from '/assets/landing/support.png';
 import fa from '/assets/solutions/fa.png';
@@ -18,11 +18,20 @@ import analysisIcon from '/assets/solutions/analysis.png';
 import sc from '/assets/solutions/sc.png';
 import ncu from '/assets/solutions/ncu.png';
 import fd from '/assets/solutions/fd.png';
-
+import ReactGA from "react-ga4";
+import { Link, useLocation } from "react-router-dom";
 const Mca = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+    const location = useLocation();
+    useEffect(() => {
+      console.log("====================================");
+      console.log(location.pathname);
+      console.log("====================================");
+      ReactGA.send({
+        hitType: "pageview",
+        page: location.pathname,
+      });
+      window.scrollTo(0, 0);
+    }, []);
   return (
     <div id="mca">
       <div className="bg pt-5">
@@ -31,8 +40,7 @@ const Mca = () => {
             <div className="col-6">
               <h6>Effortless Lending Operations</h6>
               <h1>
-                Revolutionizing Lending Operations with Small Business Lending
-                SaaS Solutions
+                Revolutionizing Lending Operations with our Small Business Lending Solutions
               </h1>
             </div>
             <div className="col-6">
@@ -50,12 +58,12 @@ const Mca = () => {
               Productivity for Businesses
             </h1>
 
-            <button type="button" className="btn text-success p-0 mb-5">
+            <Link to="/blogs/article1" className="btn text-success p-0 mb-5">
               Read more about Small Business Lending in our blog
               <span className="ms-2">
                 <FontAwesomeIcon icon={faArrowRight} color="#2B9348" />
               </span>
-            </button>
+            </Link>
           </div>
           <div className="col-md-6">
             <p>

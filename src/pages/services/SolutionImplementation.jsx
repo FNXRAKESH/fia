@@ -5,15 +5,25 @@ import Faq from '../../components/faq/Faq';
 import RequestCall from '../../components/requestCall/RequestCall';
 import './index.css'
 import bg from '/assets/service/bg2.png'
-import s1 from '/assets/service/si1.png';
-import s2 from '/assets/service/si2.png';
-import s3 from '/assets/service/si3.png';
-import s4 from '/assets/service/si4.png';
-
+import s1 from '/assets/service/s1.png';
+import s2 from '/assets/service/s2.png';
+import s3 from '/assets/service/s3.png';
+import s4 from '/assets/service/s4.png';
+import ReactGA from "react-ga4";
+import { useLocation } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 const SolutionImplementation = () => {
-   useEffect(() => {
-     window.scrollTo(0, 0);
-   }, []);
+  const location = useLocation();
+  useEffect(() => {
+    console.log("====================================");
+    console.log(location.pathname);
+    console.log("====================================");
+    ReactGA.send({
+      hitType: "pageview",
+      page: location.pathname,
+    });
+    window.scrollTo(0, 0);
+  }, []);
     return (
       <div id="solutionImplementation">
         <div className="bg pt-5">
@@ -36,12 +46,15 @@ const SolutionImplementation = () => {
                 Our Solutions are Designed to Deliver Maximum Impact, and Our
                 Implementation is Seamless and Hassle-Free.
               </h1>
-              <button type="button" className="btn text-success p-0 mb-5">
+              <HashLink
+                to="/SolutionImplementation#learnMore"
+                className="btn text-success p-0 mb-5"
+              >
                 Learn More
                 <span className="ms-2">
                   <FontAwesomeIcon icon={faArrowDown} color="#2B9348" />
                 </span>
-              </button>
+              </HashLink>
             </div>
             <div className="col-md-6">
               <p>
@@ -59,16 +72,16 @@ const SolutionImplementation = () => {
             </div>
           </div>
           <hr className="mt-5" />
-          <div className="row mt-5 align-items-center ">
+          <div id="learnMore" className="row mt-5 align-items-center ">
             <div className="col-md-5 d-none d-md-flex justify-content-center">
               <img src={s1} alt="bc" className="img-fluid" />
             </div>
             <div className="col-md-2 d-none d-md-block"></div>
             <div className="col-md-5 d-flex justify-content-center flex-column">
               <h2>
-                <span style={{ color: '#2B9348' }}>
+                <span style={{ color: "#2B9348" }}>
                   We Understand the Needs
-                </span>{' '}
+                </span>{" "}
                 of the Small Business Community
               </h2>
               <div className="col-md-5 d-flex d-md-none justify-content-center">
@@ -85,8 +98,8 @@ const SolutionImplementation = () => {
           <div className="row mt-5 align-items-center">
             <div className="col-md-5 text-end d-flex justify-content-center flex-column">
               <h2>
-                We Develop a{' '}
-                <span style={{ color: '#2B9348' }}>
+                We Develop a{" "}
+                <span style={{ color: "#2B9348" }}>
                   Flexible Lending Product
                 </span>
               </h2>
@@ -113,8 +126,8 @@ const SolutionImplementation = () => {
             <div className="col-md-2 d-none d-md-block"></div>
             <div className="col-md-5 d-flex justify-content-center flex-column">
               <h2>
-                We Establish{' '}
-                <span style={{ color: '#2B9348' }}>Clear and Transparent</span>{' '}
+                We Establish{" "}
+                <span style={{ color: "#2B9348" }}>Clear and Transparent</span>{" "}
                 Underwriting Criteria
               </h2>
               <div className="col-md-5 d-flex d-md-none justify-content-center">
@@ -133,7 +146,7 @@ const SolutionImplementation = () => {
           <div className="row mt-5 align-items-center">
             <div className="col-md-5 text-end d-flex justify-content-center flex-column">
               <h2>
-                <span style={{ color: '#2B9348' }}>We Implement</span> a Robust
+                <span style={{ color: "#2B9348" }}>We Implement</span> a Robust
                 Loan Management System
               </h2>
               <div className="col-md-5 d-flex d-md-none justify-content-center">
@@ -155,7 +168,7 @@ const SolutionImplementation = () => {
             </div>
           </div>
         </div>
-        <RequestCall title="Experience Powerful and Reliable Solutions with Effortless Implementation"/>
+        <RequestCall title="Experience Powerful and Reliable Solutions with Effortless Implementation" />
         <Faq />
       </div>
     );

@@ -62,9 +62,9 @@
 .invSteps .stepItem .circle{
     width: 146px;
     height: 146px;
-    border-radius: 50%;
+    
     position: relative;
-    background-color: #2B9348;
+    
     overflow: hidden;
     display: flex;
     align-items: center;

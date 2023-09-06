@@ -11,8 +11,19 @@ import s3 from '/assets/service/ms3.png';
 import s4 from '/assets/service/ms4.png';
 import s5 from '/assets/service/ms5.png';
 import s6 from '/assets/service/ms6.png';
+import ReactGA from "react-ga4";
+import { useLocation } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 const MaintenanceSupport = () => {
+  const location = useLocation();
   useEffect(() => {
+    console.log("====================================");
+    console.log(location.pathname);
+    console.log("====================================");
+    ReactGA.send({
+      hitType: "pageview",
+      page: location.pathname,
+    });
     window.scrollTo(0, 0);
   }, []);
   return (
@@ -37,12 +48,15 @@ const MaintenanceSupport = () => {
               We Offer Continuous Maintenance, Enhancements and Regular Updates
               to Keep Your System Ahead of the Game
             </h1>
-            <button type="button" className="btn text-success p-0 mb-5">
+            <HashLink
+              to="/MaintenanceSupport#learnMore"
+              className="btn text-success p-0 mb-5"
+            >
               Learn More
               <span className="ms-2">
                 <FontAwesomeIcon icon={faArrowDown} color="#2B9348" />
               </span>
-            </button>
+            </HashLink>
           </div>
           <div className="col-md-6">
             <p>
@@ -59,15 +73,15 @@ const MaintenanceSupport = () => {
           </div>
         </div>
         <hr className="mt-5" />
-        <div className="row mt-5 align-items-center ">
+        <div id="learnMore" className="row mt-5 align-items-center ">
           <div className="col-md-5 d-none d-md-flex justify-content-center">
             <img src={s1} alt="bc" className="img-fluid" />
           </div>
           <div className="col-md-2 d-none d-md-block"></div>
           <div className="col-md-5 d-flex justify-content-center flex-column">
             <h2>
-              Stay Connected with Our{' '}
-              <span style={{ color: '#2B9348' }}>Regular Check-Ins</span>
+              Stay Connected with Our{" "}
+              <span style={{ color: "#2B9348" }}>Regular Check-Ins</span>
             </h2>
             <div className="col-md-5 d-flex d-md-none justify-content-center">
               <img src={s1} alt="bc" className="img-fluid" />
@@ -82,8 +96,8 @@ const MaintenanceSupport = () => {
         <div className="row mt-5 align-items-center">
           <div className="col-md-5 text-end d-flex justify-content-center flex-column">
             <h2>
-              We’re Constantly Improving with Ongoing{' '}
-              <span style={{ color: '#2B9348' }}>
+              We’re Constantly Improving with Ongoing{" "}
+              <span style={{ color: "#2B9348" }}>
                 Effectiveness Evaluations
               </span>
             </h2>
@@ -108,7 +122,7 @@ const MaintenanceSupport = () => {
           <div className="col-md-2 d-none d-md-block"></div>
           <div className="col-md-5 d-flex justify-content-center flex-column">
             <h2>
-              <span style={{ color: '#2B9348' }}>Maximize Your Benefits </span>
+              <span style={{ color: "#2B9348" }}>Maximize Your Benefits </span>
               with Our Efficient Training and Support
             </h2>
             <div className="col-md-5 d-flex d-md-none justify-content-center">
@@ -124,7 +138,7 @@ const MaintenanceSupport = () => {
           <div className="col-md-5 text-end d-flex justify-content-center flex-column">
             <h2>
               We ensure
-              <span style={{ color: '#2B9348' }}> Compliance </span>
+              <span style={{ color: "#2B9348" }}> Compliance </span>
             </h2>
             <div className="col-md-5 d-flex d-md-none justify-content-center">
               <img src={s4} alt="bc" className="img-fluid" />
@@ -147,8 +161,8 @@ const MaintenanceSupport = () => {
           <div className="col-md-2 d-none d-md-block"></div>
           <div className="col-md-5 d-flex justify-content-center flex-column">
             <h2>
-              Reach Business Targets through{' '}
-              <span style={{ color: '#2B9348' }}>
+              Reach Business Targets through{" "}
+              <span style={{ color: "#2B9348" }}>
                 Monitoring and Reporting Solutions
               </span>
             </h2>
@@ -165,7 +179,7 @@ const MaintenanceSupport = () => {
         <div className="row mt-5 align-items-center">
           <div className="col-md-5 text-end d-flex justify-content-center flex-column">
             <h2>
-              <span style={{ color: '#2B9348' }}>Dedicated Support </span>for
+              <span style={{ color: "#2B9348" }}>Dedicated Support </span>for
               Resolving Issues with our Lending Solution
             </h2>
             <div className="col-md-5 d-flex d-md-none justify-content-center">

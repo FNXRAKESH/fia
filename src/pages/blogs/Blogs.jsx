@@ -1,10 +1,19 @@
 import React, { useEffect } from 'react';
-
+import ReactGA from "react-ga4";
+import { useLocation } from "react-router-dom";
 import BlogItems from '../../components/blogItems/BlogItems';
 import './Blogs.css'
 import header from '/assets/blogs/header1.png'
 const Blogs = () => {
+      const location = useLocation();
       useEffect(() => {
+        console.log("====================================");
+        console.log(location.pathname);
+        console.log("====================================");
+        ReactGA.send({
+          hitType: "pageview",
+          page: location.pathname,
+        });
         window.scrollTo(0, 0);
       }, []);
     return (

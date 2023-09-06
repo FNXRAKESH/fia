@@ -13,12 +13,22 @@ import if1 from '/assets/solutions/if1.png';
 import if2 from '/assets/solutions/if2.png';
 import if3 from '/assets/solutions/if3.png';
 import if4 from '/assets/solutions/if4.png';
-
+import ReactGA from "react-ga4";
+import { useLocation } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 const InvFactoring = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+   const location = useLocation();
+   useEffect(() => {
+     console.log("====================================");
+     console.log(location.pathname);
+     console.log("====================================");
+     ReactGA.send({
+       hitType: "pageview",
+       page: location.pathname,
+     });
+     window.scrollTo(0, 0);
+   }, []);
   return (
     <div id="invFactoring">
       <div className="bg pt-5">
@@ -45,12 +55,12 @@ const InvFactoring = () => {
               Outstanding Invoices
             </h1>
 
-            <button type="button" className="btn text-success p-0 mb-5">
+            <Link to="/blogs" className="btn text-success p-0 mb-5">
               Read more about Invoice financing in our blog
               <span className="ms-2">
                 <FontAwesomeIcon icon={faArrowRight} color="#2B9348" />
               </span>
-            </button>
+            </Link>
           </div>
           <div className="col-md-6">
             <p>

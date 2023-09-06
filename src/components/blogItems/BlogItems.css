@@ -4,7 +4,10 @@
     gap: 50px;
    
 }
-
+.blogItem{
+    display: flex;
+    flex-direction: column;
+}
 @media screen and (max-width: 420px) {
     #blogItems{
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) !important;

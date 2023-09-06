@@ -2,12 +2,24 @@ import React, { useEffect } from 'react';
 import header from '/assets/blogs/header2.png';
 import article1 from '/assets/blogs/article2.png';
 import article1a from '/assets/blogs/article1a.png';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDotCircle } from "@fortawesome/free-solid-svg-icons";
 import './index.css';
 import BlogItems from '../../components/blogItems/BlogItems';
+import ReactGA from "react-ga4";
+import { useLocation } from "react-router-dom";
 const ArticleTwo = () => {
-   useEffect(() => {
-     window.scrollTo(0, 0);
-   }, []);
+ const location = useLocation();
+ useEffect(() => {
+   console.log("====================================");
+   console.log(location.pathname);
+   console.log("====================================");
+   ReactGA.send({
+     hitType: "pageview",
+     page: location.pathname,
+   });
+   window.scrollTo(0, 0);
+ }, []);
   return (
     <div className="article container py-5">
       <h1 className="text-center pb-5">
@@ -15,6 +27,18 @@ const ArticleTwo = () => {
       </h1>
       <img src={header} alt="blog" className="img-fluid" />
       <div id="content" className="container py-5 w-75">
+        <div className="d-flex align-items-center">
+          {/* <FontAwesomeIcon icon={faUser} /> */}
+          <div>
+            <h5 className="fw-bold">Abhijit Ingole</h5>
+            <div className="d-flex align-items-center">
+              <p className="pe-3 m-0">15 Min Read</p>
+              <FontAwesomeIcon icon={faDotCircle} color="#D9D9D9" />
+              <p className="ps-3 m-0">12 Jan 2023</p>
+            </div>
+          </div>
+        </div>
+        <div className="line mb-5"></div>
         <p>
           A Salesforce-based loan collection system is a software solution
           designed to help financial institutions manage the loan collections
@@ -38,7 +62,7 @@ const ArticleTwo = () => {
 
         <img src={article1} alt="" className="img-fluid" />
 
-        <p>
+        <p className="pt-5">
           The loan collection system on Salesforce enables financial
           institutions to track delinquent loans, set up payment plans, and
           communicate with borrowers through various channels, such as email,
@@ -56,8 +80,8 @@ const ArticleTwo = () => {
         </p>
 
         <p className="text-center fw-bold py-5">
-          Tags:{' '}
-          <span className="text-decoration-underline">product design</span>,{' '}
+          Tags:{" "}
+          <span className="text-decoration-underline">product design</span>,{" "}
           <span className="text-decoration-underline">culture</span>
         </p>
         <div className="line my-5"></div>

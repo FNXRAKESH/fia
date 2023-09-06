@@ -6,10 +6,20 @@ import "./index.css";
 import BlogItems from "../../components/blogItems/BlogItems";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDotCircle, faUser } from "@fortawesome/free-solid-svg-icons";
+import ReactGA from "react-ga4";
+import { useLocation } from "react-router-dom";
 const ArticleOne = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+ const location = useLocation();
+ useEffect(() => {
+   console.log("====================================");
+   console.log(location.pathname);
+   console.log("====================================");
+   ReactGA.send({
+     hitType: "pageview",
+     page: location.pathname,
+   });
+   window.scrollTo(0, 0);
+ }, []);
   return (
     <div className="article container pt-5">
       <h1 className="text-center pb-5">
@@ -172,9 +182,9 @@ const ArticleOne = () => {
           <span className="text-decoration-underline">product design</span>,{" "}
           <span className="text-decoration-underline">culture</span>
         </p>
-        {/* <div className="line my-5"></div>
+        <div className="line my-5"></div>
           <h3 className="fw-bold text-center">Related Articles</h3>
-          <BlogItems /> */}
+          <BlogItems />
       </div>
     </div>
   );

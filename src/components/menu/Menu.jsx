@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './Menu.css';
-import logo from '/assets/logo1.png';
+import logo from '/assets/logo.png';
 import { NavHashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -27,7 +27,9 @@ const Menu = () => {
       <div className="container">
         <nav className="navbar  navbar-expand-lg pt-4">
           <a className="navbar-brand" href="#">
-            <img src={logo} alt="FIA" />
+            <Link to="/">
+              <img src={logo} alt="FIA" />
+            </Link>
           </a>
           <button
             className="navbar-toggler"
@@ -60,7 +62,7 @@ const Menu = () => {
                   Solutions
                 </a>
                 <ul className="dropdown-menu">
-                  <Link to="mca">
+                  <Link to="small-business-lending">
                     <li className="dropdown-item">
                       <span
                         data-bs-target="#navbarNav"

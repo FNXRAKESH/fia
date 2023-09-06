@@ -327,8 +327,8 @@ const Faq = () => {
             <div className="text-center pt-5 alternate">
               <h6 className="fw-bold">Write to us</h6>
               <p>
-                Alternatively, you can write us at our email address:&nbsp;
-                <a href="mailto:contact@fiatechs.com">contact@fiatechs.com</a>
+                Alternatively, you can call us on our number::&nbsp;
+                <a href="tel:+15106066550">+1(510)6066550</a>
               </p>
             </div>
           </div>

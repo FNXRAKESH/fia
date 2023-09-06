@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css'
-import logo from '/assets/logo1.png'
+import logo from '/assets/logo.png'
 import faceboook from '/assets/facebook.png'
 import linkedin from '/assets/linkedin.png'
 import instagram from '/assets/instagram.png'
@@ -17,9 +17,9 @@ const Footer = () => {
           )}
           <div className="row">
             <div className="col-lg-4">
-              <div className="d-flex align-items-start flex-wrap w-100">
-                <div className="me-4 pb-4">
-                  <img src={logo} alt="Levee" className="img-fluid" />
+              <div className="d-flex align-items-center flex-wrap w-100">
+                <div className="me-4">
+                  <img src={logo} alt="FIA" className="img-fluid" />
                 </div>
                 <p className="fw-bold name pb-0" style={{ cursor: "auto" }}>
                   Financial
@@ -46,7 +46,7 @@ const Footer = () => {
                   <p>
                     <HashLink to="/aboutus#whyChoose">Why choose</HashLink>
                   </p>
-                  <p>Careers</p>
+                  {/* <p>Careers</p> */}
                   <p>
                     <HashLink to="/contact">Contact us</HashLink>
                   </p>
@@ -68,28 +68,28 @@ const Footer = () => {
                     <HashLink to="/mca#mcaOrigination">Origination</HashLink>
                   </p>
                   <p>
-                    <HashLink to="/#offers">Analysis</HashLink>
+                    <HashLink to="/#Analysis">Analysis</HashLink>
                   </p>
                   <p>
-                    <HashLink to="/#offers">Integrations</HashLink>
+                    <HashLink to="/#Integrations">Integrations</HashLink>
                   </p>
                   <p>
-                    <HashLink to="/#offers">Servicing</HashLink>
+                    <HashLink to="/#Servicing">Servicing</HashLink>
                   </p>
                   <p>
-                    <HashLink to="/#offers">Deployment</HashLink>
+                    <HashLink to="/#Deployment">Deployment</HashLink>
                   </p>
                 </div>
               </div>
 
-              <div className="d-flex justify-content-center">
+              {/* <div className="d-flex justify-content-center">
                 <div>
                   <h3>Legal</h3>
                   <p>Terms &amp; Conditions</p>
 
                   <p>Privacy</p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
 

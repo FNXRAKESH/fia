@@ -26,7 +26,7 @@ const Offerings = () => {
                 </div>
                 <h4>Origination</h4>
                 <p className="py-3">
-                  We help you attract potential borrowers by{' '}
+                  We help you attract potential borrowers by{" "}
                   <b>
                     providing an easy &amp; reliable experience of application
                     processing.
@@ -35,30 +35,32 @@ const Offerings = () => {
                 {/* <button className="btn ">Learn More</button> */}
               </div>
             </div>
-            <div className="col-md-4 d-flex align-items-strech">
+            <div id="Analysis" className="col-md-4 d-flex align-items-strech">
               <div className="keys key2 px-3 py-5">
                 <div className="imgContainer">
                   <img src={analysis} alt="solutions" />
                 </div>
                 <h4>Credit Analysis</h4>
                 <p className="py-3">
-                  We analyze a business's creditworthiness and risk level to{' '}
+                  We analyze a business's creditworthiness and risk level to{" "}
                   <b>
-                    determine their eligibility for Small Business Lending
-                    loan.
+                    determine their eligibility for Small Business Lending loan.
                   </b>
                 </p>
                 {/* <button className="btn ">Learn More</button> */}
               </div>
             </div>
-            <div className="col-md-4 d-flex align-items-strech">
+            <div
+              id="Integrations"
+              className="col-md-4 d-flex align-items-strech"
+            >
               <div className="keys key3 px-3 py-5">
                 <div className="imgContainer">
                   <img src={integration} alt="solutions" />
                 </div>
                 <h4>Integrations</h4>
                 <p className="py-3">
-                  We assist you in{' '}
+                  We assist you in{" "}
                   <b>
                     capturing and leveraging data available through third-party
                     integrations.
@@ -69,14 +71,14 @@ const Offerings = () => {
             </div>
           </div>
           <div className="row">
-            <div className="col-md-4 d-flex align-items-strech">
+            <div id="Servicing" className="col-md-4 d-flex align-items-strech">
               <div className="keys key4 px-3 py-5">
                 <div className="imgContainer">
                   <img src={service} alt="solutions" />
                 </div>
                 <h4>Servicing</h4>
                 <p className="py-3">
-                  We help you simplify the process of{' '}
+                  We help you simplify the process of{" "}
                   <b>
                     maintaining regulatory compliance &amp; tracking and
                     reconciling loans.
@@ -99,14 +101,14 @@ const Offerings = () => {
                 {/* <button className="btn ">Learn More</button> */}
               </div>
             </div>
-            <div className="col-md-4 d-flex align-items-strech">
+            <div id="Deployment" className="col-md-4 d-flex align-items-strech">
               <div className="keys key6 px-3 py-5">
                 <div className="imgContainer">
                   <img src={support} alt="solutions" />
                 </div>
                 <h4>Post-deployment Support</h4>
                 <p className="py-3">
-                  We offer <b>post-implementation support &amp; maintenance</b>{' '}
+                  We offer <b>post-implementation support &amp; maintenance</b>{" "}
                   for robustness.
                 </p>
                 {/* <button className="btn ">Learn More</button> */}

@@ -1,4 +1,4 @@
-import { HashRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { HashRouter, useLocation, Route, Routes } from "react-router-dom";
 import Footer from './components/footer/Footer';
 import Menu from './components/menu/Menu';
 import BusinessConsulting from './pages/services/BusinessConsulting';
@@ -16,8 +16,13 @@ import Blogs from './pages/blogs/Blogs';
 import ArticleOne from './pages/articles/ArticleOne';
 import ArticleTwo from './pages/articles/ArticleTwo';
 import ArticleThree from './pages/articles/ArticleThree';
+import ArticleFour from './pages/articles/ArticleFour';
+ 
 
-function App() {
+
+function App(props) {
+  
+  
   return (
     <div>
       <HashRouter>
@@ -32,7 +37,7 @@ function App() {
             element={<SolutionImplementation />}
           />
           <Route path="invFactoring" element={<InvFactoring />} />
-          <Route path="mca" element={<Mca />} />
+          <Route path="small-business-lending" element={<Mca />} />
           <Route path="aboutus" element={<AboutUs />} />
           <Route path="contact" element={<ContactUs />} />
           <Route path="blogItems" element={<BlogItems />} />
@@ -40,6 +45,7 @@ function App() {
           <Route path="/blogs/article1" element={<ArticleOne />} />
           <Route path="/blogs/article2" element={<ArticleTwo />} />
           <Route path="/blogs/article3" element={<ArticleThree />} />
+          <Route path="/blogs/article4" element={<ArticleFour />} />
         </Routes>
         <Footer />
       </HashRouter>
