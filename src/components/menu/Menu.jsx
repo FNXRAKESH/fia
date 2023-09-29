@@ -5,6 +5,7 @@ import { NavHashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { HashLink } from "react-router-hash-link";
 
 const Menu = () => {
   useEffect(() => {
@@ -59,6 +60,79 @@ const Menu = () => {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
+                  Products
+                </a>
+                <ul className="dropdown-menu">
+                  <HashLink to="products/#onboarding">
+                    <li className="dropdown-item">
+                      <span
+                        data-bs-target="#navbarNav"
+                        data-bs-toggle="collapse"
+                      >
+                        FIA Onboarding
+                      </span>
+                    </li>
+                  </HashLink>
+                  <HashLink to="products#intake">
+                    <li className="dropdown-item">
+                      <span
+                        data-bs-target="#navbarNav"
+                        data-bs-toggle="collapse"
+                      >
+                        FIA Intake
+                      </span>
+                    </li>
+                  </HashLink>
+                  <HashLink to="products#pricing">
+                    <li className="dropdown-item">
+                      <span
+                        data-bs-target="#navbarNav"
+                        data-bs-toggle="collapse"
+                      >
+                        FIA Pricing
+                      </span>
+                    </li>
+                  </HashLink>
+                  <HashLink to="products#underwriting">
+                    <li className="dropdown-item">
+                      <span
+                        data-bs-target="#navbarNav"
+                        data-bs-toggle="collapse"
+                      >
+                        FIA Underwriting
+                      </span>
+                    </li>
+                  </HashLink>
+                  <HashLink to="products#funding">
+                    <li className="dropdown-item">
+                      <span
+                        data-bs-target="#navbarNav"
+                        data-bs-toggle="collapse"
+                      >
+                        FIA Funding
+                      </span>
+                    </li>
+                  </HashLink>
+                  <HashLink to="products#servicing">
+                    <li className="dropdown-item">
+                      <span
+                        data-bs-target="#navbarNav"
+                        data-bs-toggle="collapse"
+                      >
+                        FIA Servicing
+                      </span>
+                    </li>
+                  </HashLink>
+                </ul>
+              </li>
+              <li className="nav-item dropdown">
+                <a
+                  className="nav-link dropdown-toggle"
+                  href="/"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   Solutions
                 </a>
                 <ul className="dropdown-menu">
@@ -84,7 +158,7 @@ const Menu = () => {
                   </Link>
                 </ul>
               </li>
-              <li className="nav-item dropdown">
+              {/* <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
                   href="/"
@@ -126,7 +200,7 @@ const Menu = () => {
                     </li>
                   </Link>
                 </ul>
-              </li>
+              </li> */}
 
               <li className="nav-item dropdown">
                 <a

@@ -80,12 +80,12 @@ const TabContent = () => {
                 small to medium-sized business lending. Each of our SaaS
                 solutions can be perfectly customised to fit your needs.
               </p>
-              <Link to="/mca" className="btn text-success p-0 mb-5">
+              {/* <Link to="/mca" className="btn text-success p-0 mb-5">
                 Learn More about Small Business Lending
                 <span className="ms-2">
                   <FontAwesomeIcon icon={faArrowRight} color="#2B9348" />
                 </span>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

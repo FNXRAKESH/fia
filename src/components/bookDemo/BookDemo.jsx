@@ -61,12 +61,15 @@ const BookDemo = () => {
             aria-label="Select a product that you are interested in"
           >
             <option value="All Products">All Products</option>
-            <option value="Merchant Cash Advance">Merchant Cash Advance</option>
-            <option value="Invoice Financing">Invoice Financing</option>
-            <option value="NA">N/A</option>
+            <option value="FIA Onboarding">FIA Onboarding</option>
+            <option value="FIA Intake">FIA Intake</option>
+            <option value="FIA Pricing">FIA Pricing</option>
+            <option value="FIA Underwriting">FIA Underwriting</option>
+            <option value="FIA Funding">FIA Funding</option>
+            <option value="FIA Servicing">FIA Servicing</option>
           </select>
         </div>
-        <div className="mb-3">
+        {/* <div className="mb-3">
           <label htmlFor="services" className="form-label">
             Select a service that you are interested in
           </label>
@@ -84,7 +87,7 @@ const BookDemo = () => {
             <option value="Maintenance Support">Maintenance Support</option>
             <option value="NA">N/A</option>
           </select>
-        </div>
+        </div> */}
 
         <button type="submit" className="btn btn-success mb-3 w-100">
           Request for a demo

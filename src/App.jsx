@@ -17,6 +17,7 @@ import ArticleOne from './pages/articles/ArticleOne';
 import ArticleTwo from './pages/articles/ArticleTwo';
 import ArticleThree from './pages/articles/ArticleThree';
 import ArticleFour from './pages/articles/ArticleFour';
+import Products from "./pages/products/Products";
  
 
 
@@ -30,12 +31,12 @@ function App(props) {
         <Routes>
           <Route path="/" element={<Landing />} />
 
-          <Route path="BusinessConsulting" element={<BusinessConsulting />} />
-          <Route path="MaintenanceSupport" element={<MaintenanceSupport />} />
-          <Route
+          {/* <Route path="BusinessConsulting" element={<BusinessConsulting />} /> */}
+          {/* <Route path="MaintenanceSupport" element={<MaintenanceSupport />} /> */}
+          {/* <Route
             path="SolutionImplementation"
             element={<SolutionImplementation />}
-          />
+          /> */}
           <Route path="invFactoring" element={<InvFactoring />} />
           <Route path="small-business-lending" element={<Mca />} />
           <Route path="aboutus" element={<AboutUs />} />
@@ -46,6 +47,7 @@ function App(props) {
           <Route path="/blogs/article2" element={<ArticleTwo />} />
           <Route path="/blogs/article3" element={<ArticleThree />} />
           <Route path="/blogs/article4" element={<ArticleFour />} />
+          <Route path='/products' element={<Products />} />
         </Routes>
         <Footer />
       </HashRouter>
